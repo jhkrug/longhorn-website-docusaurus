@@ -14,6 +14,7 @@ tags:
 Longhorn is an official CNCF project that delivers a powerful cloud-native distributed storage platform for Kubernetes that can run anywhere. Longhorn makes the deployment of highly available persistent block storage in your Kubernetes environment easy, fast, and reliable.
 
 Since the Longhorn v1.0.0 release, we've received many queries regarding the performance and scalability aspects of Longhorn. We're glad to share some results here.
+<!-- truncate -->
 
 # Performance
 ## Environment setup

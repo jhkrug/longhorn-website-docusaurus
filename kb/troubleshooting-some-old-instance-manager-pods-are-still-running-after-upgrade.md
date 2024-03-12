@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Some old instance manager pods are still running after upgrade"
-author: Derek Su
+authors:
+- "Derek Su"
 draft: false
 date: 2021-11-09
+versions:
+- "≥ v0.8.0"
 categories:
-  - "Longhorn Upgrade"
+- "longhorn upgrade"
 ---
 
 ## Applicable versions
@@ -20,6 +23,7 @@ Some old instance manager pods are still running after upgrade.
 **This behavior is an expected behavior rather than a bug.** In the following paragraphs, we will explain why.
 
 Let us first take a look of the example. We created a pod with a volume backed by 3 replicas in a Kubernetes cluster with 1 master and 4 workers nodes. The running volume is associated with the engine instance manager pod `instance-manager-e-ec3eb207`.
+<!-- truncate -->
 
 - Before upgrade, what the current instance manager pods are and which node the volume is on:
 ```

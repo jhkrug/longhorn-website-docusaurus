@@ -14,6 +14,7 @@ I am glad to announce that Longhorn will join the Virtual KubeCon EU 2020 next w
 ![Image](/img/blogs/kubecon-eu-2020/booth.png)
 
 We've also scheduled the following events during the KubeCon EU 2020:
+<!-- truncate -->
 
 ## Office Hours
 

@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Longhorn-UI: Error during WebSocket handshake: Unexpected response code: 200 #2265"
-author: Clark Hsu
+authors:
+- "Clark Hsu"
 draft: false
 date: 2021-03-09
-catelogies:
-  - "longhorn-ui"
+versions:
+- "Existing Longhorn versions < v1.1.0 upgrade to Longhorn ≥ v1.1.0."
+categories:
+- "longhorn-ui"
 ---
 
 ## Applicable versions
@@ -20,6 +23,7 @@ Ingress messages:
 ```
 {"level":"error","msg":"vulcand/oxy/forward/websocket: Error dialing \"10.17.1.246\": websocket: bad handshake with resp: 200 200 OK","time":"2021-03-09T08:29:03Z"}
 ```
+<!-- truncate -->
 
 Longhorn UI messages:
 

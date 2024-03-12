@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Volumes Stuck in Attach/Detach Loop When Using Longhorn on OKD"
-author: Jack Lin
+authors:
+- "Jack Lin"
 draft: false
 date: 2023-02-09
+versions:
+- "all"
 categories:
-  - "iscsi"
+- "iscsi"
 ---
 
 ## Applicable versions
@@ -17,6 +20,7 @@ All volumes stuck in Attach/Detach loop. By using dmesg on storage nodes you can
 [Sat Dec 10 18:52:01 2022] audit: type=1300 audit(1670698321.515:7214): arch=c000003e syscall=83 success=no exit=-13 a0=55b9035185c0 a1=1f8 a2=ffffffffffffff00 a3=0 items=0 ppid=231163 pid=231579 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="iscsiadm" exe="/usr/sbin/iscsiadm" subj=system_u:system_r:iscsid_t:s0 key=(null)
 [Sat Dec 10 18:52:01 2022] audit: type=1327 audit(1670698321.515:7214): proctitle=697363736961646D002D6D00646973636F76657279002D740073656E6474617267657473002D700031302E3133312E312E31363
 ```
+<!-- truncate -->
 
 ## Reason
 

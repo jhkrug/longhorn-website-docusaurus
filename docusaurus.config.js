@@ -55,13 +55,14 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          editUrl: "https://github.com/longhorn/website/content/docs",
+          editUrl: "https://github.com/longhorn/website-docusaurus/docs",
         },
         blog: {
           showReadingTime: true,
           blogSidebarTitle: "All posts",
           blogSidebarCount: "ALL",
-          editUrl: "https://github.com/longhorn/website/content/blog/",
+          authorsMapPath: "authors.yml",
+          editUrl: "https://github.com/longhorn/website-docusaurus/blog/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -80,7 +81,8 @@ const config = {
         showReadingTime: true,
         blogSidebarTitle: "All articles",
         blogSidebarCount: "ALL",
-        editUrl: "https://github.com/longhorn/website/content/kb/",
+        authorsMapPath: "authors.yml",
+        editUrl: "https://github.com/longhorn/website-docusaurus/kb/",
       },
     ],
   ],

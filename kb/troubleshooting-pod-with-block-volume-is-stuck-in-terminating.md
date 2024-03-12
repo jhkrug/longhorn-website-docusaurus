@@ -1,8 +1,11 @@
 ---
 title: "Troubleshooting: Pod with `volumeMode: Block` is stuck in terminating"
-author: Phan Le
+authors:
+- "Phan Le"
 draft: false
 date: 2022-04-06
+versions:
+- "all"
 categories:
 - "HA"
 ---
@@ -17,6 +20,7 @@ After an unexpected crash of the Longhorn volume (due to network, CPU pressure, 
 The pod would be stuck in terminating forever since Kubelet refuses to unmount the block volume.
 This prevents the user from cleaning up the pod and spinning up a new replacement pod thus leading to a long service degradation.
 For example, if the pod is part of a StatefulSet, the replacement pod cannot come up due to the old pod being stuck terminating.
+<!-- truncate -->
 
 Kubelet logs the following error message:
 ```

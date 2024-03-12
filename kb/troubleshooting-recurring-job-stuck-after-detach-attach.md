@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Recurring job does not create new jobs after detaching and attaching volume"
-author: Chin-Ya Huang
+authors:
+- "Chin-Ya Huang"
 draft: false
 date: 2021-04-21
+versions:
+- "all"
 categories:
-  - "recurring job"
+- "recurring job"
 ---
 
 ## Applicable versions
@@ -25,6 +28,7 @@ According to Kubernetes [CronJob limitations](https://kubernetes.io/docs/concept
 That means the duration of the attach/detach operation that the recurring job can tolerate is depending on the scheduled interval.
 
 For example, if the recurring backup job is set to run every minute, then the toleration would be 100 minutes.
+<!-- truncate -->
 
 ## Solution
 

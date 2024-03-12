@@ -1,11 +1,14 @@
 ---
 title: "Troubleshooting: `MountVolume.SetUp failed for volume` due to multipathd on the node"
-author: Clark Hsu
+authors:
+- "Clark Hsu"
 draft: false
 date: 2021-03-16
-catelogies:
-  - "csi"
-  - "multipathd"
+versions:
+- "all"
+categories:
+- "csi"
+- "multipathd"
 ---
 
 ## Applicable versions
@@ -15,6 +18,7 @@ All Longhorn versions.
 ## Symptoms
 
 The pod with the volume is not starting and encounters error messages in `longhorn-csi-plugin`:
+<!-- truncate -->
 
 ```
 time="2020-04-16T08:49:27Z" level=info msg="GRPC request: {\"target_path\":\"/var/lib/kubelet/pods/cf0a0b5b-106e-4793-a74a-28bfae21be1a/volumes/kubernetes.io~csi/pvc-d061512e-870a-4ece-bd45-2f04672d5256/mount\",\"volume_capability\":{\"AccessType\":{\"Mount\":{\"fs_type\":\"ext4\"}},\"access_mode\":{\"mode\":1}},\"volume_context\":{\"baseImage\":\"\",\"fromBackup\":\"\",\"numberOfReplicas\":\"3\",\"staleReplicaTimeout\":\"30\",\"storage.kubernetes.io/csiProvisionerIdentity\":\"1586958032802-8081-driver.longhorn.io\"},\"volume_id\":\"pvc-d061512e-870a-4ece-bd45-2f04672d5256\"}"

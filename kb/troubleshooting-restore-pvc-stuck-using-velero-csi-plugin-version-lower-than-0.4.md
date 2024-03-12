@@ -1,8 +1,11 @@
 ---
 title: "Troubleshooting: Velero restores Longhorn PersistentVolumeClaim stuck in the Pending state when using the Velero CSI Plugin version before v0.4.0"
-author: Ray Chang
+authors:
+- "Ray Chang"
 draft: false
 date: 2022-12-15
+versions:
+- "all"
 categories:
   - "restore"
 ---
@@ -18,6 +21,7 @@ PersistentVolumeClaim is stuck in the `Pending` state when restoring Longhorn wi
 ## Reason
 
 For Longhorn versions using `longhornio/csi-provisioner:v2.1.2`, when it processes a PVC to provision the volume, Longhorn CSI provisioner will only recognize the `volume.beta.kubernetes.io/storage-provisioner` annotation which will be tagged together with `volume.kubernetes.io/storage-provisioner` to each PVC via Kubernetes after determining the storage provisioner. The PVC with these annotations will be backed up together via Velero.
+<!-- truncate -->
 
 After restoring the PVC via Velero with its CSI plugin (< 0.4), it will only remove the `volume.beta.kubernetes.io/storage-provisioner` but keep the `volume.kubernetes.io/storage-provisioner` annotation intact from the PVC, because the plugin doesn't respect the general available `volume.kubernetes.io/storage-provisioner` annotation. Because Kubernetes will not add `volume.kubernetes.io/storage-provisioner` to the PVC which already has the beta annotation, it will cause the restoring PVC will be failed to be processed by the built-in Longhorn CSI provisioner and be stuck in the `Pending` state.
 

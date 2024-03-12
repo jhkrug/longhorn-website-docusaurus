@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Open-iSCSI on RHEL based systems"
-author: Keith Lucas
+authors:
+- "Keith Lucas"
 draft: false
 date: 2022-02-22
+versions:
+- "all"
 categories:
-   - "iscsi"
+- "iscsi"
 ---
 
 ## Applicable versions
@@ -15,6 +18,7 @@ All Longhorn versions.
 
 The `iscsi.service` systemd service may add about 2-3 minutes to the boot up 
 time of a node if the node is restarted with longhorn volumes attached to it.
+<!-- truncate -->
 
 ## Background 
 

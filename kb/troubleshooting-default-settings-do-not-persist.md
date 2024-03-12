@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Longhorn default settings do not persist"
-author: Chin-Ya Huang
+authors:
+- "Chin-Ya Huang"
 draft: false
 date: 2021-04-29
+versions:
+- "< v1.3.0"
 categories:
-  - "setting"
+- "setting"
 ---
 
 ## Applicable versions
@@ -14,6 +17,7 @@ Longhorn version < v1.3.0.
 ## Symptoms
 
 * When upgrading Longhorn system via helm or Rancher App, the modified Longhorn default settings doesn't persist.
+<!-- truncate -->
 
 * When modifying the default settings via `kubectl -n longhorn-system edit configmap longhorn-default-setting`, the modification won't be applied to the Longhorn system.
 

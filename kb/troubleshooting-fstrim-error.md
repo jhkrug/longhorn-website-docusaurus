@@ -1,16 +1,21 @@
 ---
 title: "Troubleshooting: fstrim doesn't work on old kernel"
-author: Phan Le
+authors:
+- "Phan Le"
 draft: false
 date: 2023-10-06
-catelogies:
-  - "trim"
+versions:
+- "≥ v1.4.0"
+categories:
+- "filesystem trim"
+- "Linux kernel"
 ---
 
 ## Applicable versions
 
 * Longhorn version ≥ `v1.4.0`
 * Node kernel version ≤ `v4.12`
+<!-- truncate -->
 
 ## Symptoms
 

@@ -1,13 +1,16 @@
 ---
 title: "Troubleshooting: Failed RWX mount due to connection timeout"
-author: Eric Weber
+authors:
+- "Eric Weber"
 draft: false
 date: 2023-09-05
+versions:
+- "all"
 categories:
-  - "nfs"
-  - "rwx"
-  - "sles"
-  - "flannel"
+- "nfs"
+- "rwx"
+- "sles"
+- "flannel"
 ---
 
 ## Applicable versions
@@ -17,6 +20,7 @@ Confirmed with:
 - K3s `v1.24.8+k3s1` and RKE2 `v1.24.8+rke2r1`
 - Longhorn `v1.3.3`
 - SUSE Linux Enterprise Server 15 SP5
+<!-- truncate -->
 
 Likely possible with:
 

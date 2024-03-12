@@ -1,8 +1,11 @@
 ---
 title: "Tip: Set Longhorn To Only Use Storage On A Specific Set Of Nodes"
-author: Phan Le
+authors:
+- "Phan Le"
 draft: false
 date: 2021-11-15
+versions:
+- "all"
 categories:
 - "tip"
 - "scheduling"
@@ -17,6 +20,7 @@ All Longhorn versions.
 Let's say you have a cluster of 5 nodes (`node-1`, `node-2`, ..., `node-5`).
 You have some fast disks on `node-1`, `node-2`, and `node-3` so you want Longhorn to use storage on those nodes only.
 There are a few ways to do this as below.
+<!-- truncate -->
 
 ## Tell Longhorn to create a default disk on a specific set of nodes
 * Label `node-1`, `node-2`, and `node-3` with label `node.longhorn.io/create-default-disk=true` (e.g., `kubectl label nodes node-1 node.longhorn.io/create-default-disk=true`)

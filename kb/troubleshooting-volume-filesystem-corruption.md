@@ -1,10 +1,14 @@
 ---
 title: "Troubleshooting: Pod stuck in creating state when Longhorn volumes filesystem is corrupted"
-author: Chin-Ya Huang and Derek Su
+authors:
+- "Chin-Ya Huang"
+- "Derek Su"
 draft: false
 date: 2021-08-19
+versions:
+- "all"
 categories:
-  - "volume"
+- "data integrity"
 ---
 
 ## Applicable versions
@@ -22,6 +26,7 @@ ext2fs_check_if_mount: Can't check if filesystem is mounted due to missing mtab 
 /dev/longhorn/pvc-bb8582d5-eaa4-479a-b4bf-328d1ef1785d: UNEXPECTED INCONSISTENCY; RUN fsck MANUALLY.
   (i.e., without -a or -p options)
 ```
+<!-- truncate -->
 
 ## Reason
 

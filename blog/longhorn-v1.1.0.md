@@ -14,6 +14,7 @@ Hi, Longhorn community members!
 Today I am excited to announce our latest Longhorn release: v1.1.0!
 
 Longhorn v1.1 is a huge step forward to the ultimate goal of the project: making persistent storage ubiquitous in Kubernetes. Here are a few highlights of Longhorn v1.1.0.
+<!-- truncate -->
 
 
 ## Built-in ReadWriteMany(RWX) Support

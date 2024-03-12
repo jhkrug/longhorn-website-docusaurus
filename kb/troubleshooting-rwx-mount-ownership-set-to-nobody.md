@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Longhorn RWX shared mount ownership is shown as nobody in consumer Pod"
-author: Chin-Ya Huang
+authors:
+- "Chin-Ya Huang"
 draft: false
 date: 2021-03-31
+versions:
+- "v1.1.0"
 categories:
-  - "rwx"
+  - "RWX volume"
 ---
 
 ## Applicable versions
@@ -24,6 +27,7 @@ root@ip-172-30-0-139:~# kubectl -n longhorn-system exec -it share-manager-pvc-f3
 total 16
 drwx------ 2 root root 16384 Mar 31 04:42 lost+found
 ```
+<!-- truncate -->
 
 ## Background
 

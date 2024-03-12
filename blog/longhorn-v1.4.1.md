@@ -8,6 +8,7 @@ categories:
 ---
 
 Longhorn 1.4.1 is the first stable release of Longhorn 1.4 since v1.4.0 was released three months ago, and its primary focus is on space efficiency, resilience, performance, and stability.
+<!-- truncate -->
 
 Regarding space efficiency, the space usage of volume snapshots is always the main area to improve. In previous versions, Longhorn supported recurring jobs to retain a specific number of volume snapshots for the volume that applied the job. However, there were some cases that were not achievable, such as deleting all snapshots or system snapshots with removable snapshots, especially for workloads that have their own replication capability like distributed databases. In v1.4.1, two new job types have been introduced: snapshot-delete and snapshot-cleanup. Users can plan different jobs based on their space usage requirements to clean up unnecessary snapshots and optimize space efficiency.
 

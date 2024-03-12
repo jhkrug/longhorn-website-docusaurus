@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: `volume readonly or I/O error`"
-author: Shuo Wu
+authors:
+- "Shuo Wu"
 draft: false
 date: 2021-01-08
+versions:
+- "all"
 categories:
-  - "HA"
+- "HA"
 ---
 
 ## Applicable versions
@@ -17,6 +20,7 @@ When an application writes data to existing files or creates files in the mount 
 /data # echo test > test
 sh: can't create test: I/O error
 ```
+<!-- truncate -->
 
 When running the `dmesg` in the related pod or the node host, the following message is shown:
 ```

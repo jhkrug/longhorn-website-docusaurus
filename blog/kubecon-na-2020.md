@@ -12,6 +12,7 @@ Hi Longhorn community members,
 The holiday season is almost there, and Longhorn is going to the KubeCon + CloudNativeCon NA Virtual 2020 next week!
 
 I know, I know, it just has been three months after the last KubeCon. But many things has happened, including a delayed Longhorn v1.1.0 release...
+<!-- truncate -->
 
 At this moment, the Longhorn team is still busy working on bringing the best possible v1.1.0 release to you.
 

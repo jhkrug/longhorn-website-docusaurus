@@ -1,13 +1,16 @@
 ---
 title: "Troubleshooting: Volume attachment fails due to SELinux denials in Fedora downstream distributions"
-author: Eric Weber
+authors:
+- "Eric Weber"
 draft: false
 date: 2023-06-07
+versions:
+- "all"
 categories:
-  - "iscsi"
-  - "selinux"
-  - "rhel"
-  - "rocky"
+- "iscsi"
+- "selinux"
+- "rhel"
+- "rocky"
 ---
 
 ## Applicable versions
@@ -20,6 +23,7 @@ updated beyond version `2.189.0`. This can happen unexpectedly and can catch adm
 ## Symptoms
 Symptoms are the same as those discussed in a [previous KB article that focused on
 OKD](../kb/troubleshooting-volumes-stuck-in-attach-detach-loop-when-using-longhorn-on-okd/).
+<!-- truncate -->
 
 All volumes are stuck in an attach/detach loop. `dmesg` and `ausearch` on storage nodes reveal SELinux issues:
 ```

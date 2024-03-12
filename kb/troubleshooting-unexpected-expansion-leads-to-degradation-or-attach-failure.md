@@ -1,12 +1,15 @@
 ---
 title: "Troubleshooting: Unexpected expansion leads to degradation or attach failure"
-author: Eric Weber
+authors:
+- "Eric Weber"
 draft: false
 date: 2023-07-26
+versions:
+- "See Applicable Versions"
 categories:
-  - "expansion"
-  - "replica"
-  - "instance-manager"
+- "expansion"
+- "replica"
+- "instance-manager"
 ---
 
 ## Applicable versions
@@ -31,6 +34,7 @@ Complete fix planned in:
 ## Symptoms
 
 While the root cause is always the same, symptoms can vary depending on other factors (e.g. whether there are multiple
+<!-- truncate -->
 healthy replicas, which specific version of Longhorn is in use, etc.).
 
 Generic symptoms that are not in-and-of-themselves evidence of this issue include:

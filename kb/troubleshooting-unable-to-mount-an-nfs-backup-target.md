@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Unable to access an NFS backup target"
-author: James Lu
+authors:
+- "James Lu"
 draft: false
 date: 2022-05-27
+versions:
+- "all"
 categories:
-  - "backup"
+- "backup"
 ---
 
 ## Applicable versions
@@ -14,6 +17,7 @@ All Longhorn versions.
 ## Prerequisite
 
 Longhorn supports only NFS versions 4.0, 4.1, and 4.2. Users should ensure that both their backup server and client support one of the supported versions.
+<!-- truncate -->
 
 ### How to determine which NFS version is used
 

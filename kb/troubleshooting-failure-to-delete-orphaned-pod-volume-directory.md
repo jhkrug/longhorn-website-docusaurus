@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Failure to delete orphaned Pod volume directory"
-author: Ray Chang
+authors:
+- "Ray Chang"
 draft: false
 date: 2023-07-20
+versions:
+- "all"
 categories:
-  - "csi"
+- "csi"
 ---
 
 ## Applicable versions
@@ -19,6 +22,7 @@ In the event of a worker node failure, while hosting active Pods, the Pods are g
 ```
 orphaned pod <pod-uid> found, but error not a directory occurred when trying to remove the volumes dir
 ```
+<!-- truncate -->
 
 ## Reason
 

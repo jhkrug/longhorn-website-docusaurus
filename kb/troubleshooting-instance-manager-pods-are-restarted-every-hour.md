@@ -1,8 +1,11 @@
 ---
 title: "Troubleshooting: Instance manager pods are restarted every hour"
-author: Phan Le
+authors:
+- "Phan Le"
 draft: false
 date: 2022-02-25
+versions:
+- "≥ v1.0.1"
 categories:
 - "instance manager"
 ---
@@ -16,6 +19,7 @@ Each Longhorn volume has one engine and one or more replicas (see more detail ab
 When a Longhorn volume is attached, Longhorn launches a process for each engine/replica object.
 The engine process will be launched inside engine instance manager pods (the `instance-manager-e-xxxxxxxx` pods inside `longhorn-system` namespace).
 The replica process will be launched inside replica instance manager pods (the `instance-manager-r-xxxxxxxx` pods inside `longhorn-system` namespace).
+<!-- truncate -->
 
 ## Symptoms
 

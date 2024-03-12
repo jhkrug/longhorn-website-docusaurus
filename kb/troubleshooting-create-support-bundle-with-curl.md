@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Create Support Bundle with cURL"
-author: Chin-Ya Huang
+authors:
+- "Chin-Ya Huang"
 draft: false
 date: 2021-04-12
+versions:
+- "all"
 categories:
-  - "support bundle"
+- "support bundle"
 ---
 
 ## Applicable versions
@@ -25,6 +28,7 @@ Not able to create the support bundle with a web browser.
     NAME               TYPE       CLUSTER-IP          EXTERNAL-IP   PORT(S)          AGE
     longhorn-backend   NodePort   10.43.136.157       <none>        9500:32595/TCP   156m
     ```
+<!-- truncate -->
 
 2. Run the below script to create and download the support bundle.
 You will need to replace the `BACKEND_URL`, `ISSUE_URL`, `ISSUE_DESCRIPTION`.

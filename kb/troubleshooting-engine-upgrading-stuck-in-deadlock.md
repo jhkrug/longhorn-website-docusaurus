@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Upgrading volume engine is stuck in deadlock"
-author: Phan Le
+authors:
+- "Phan Le"
 draft: false
 date: 2022-01-03
+versions:
+- "This happens when users upgrade Longhorn from version ≤ v1.1.1 to a newer version."
 categories:
-- "Longhorn Upgrade"
+- "longhorn upgrade"
 ---
 
 ## Applicable versions
@@ -17,6 +20,7 @@ This happens when users upgrade Longhorn from version ≤ v1.1.1 to a newer vers
 then upgrade the Longhorn engine to the latest version using the latest Longhorn manager.
 When doing the second step (upgrading Longhorn engine), you may hit the problem that some volumes are stuck in engine upgrading.
 You may also see that volume attachment/detachment cannot finish (e.g., Longhorn volumes are stuck in detaching or attaching state).
+<!-- truncate -->
 
 ## Reason
 

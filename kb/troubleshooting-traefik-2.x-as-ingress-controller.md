@@ -1,10 +1,13 @@
 ---
 title: "Troubleshooting: Use Traefik 2.x as ingress controller"
-author: JenTing Hsiao
+authors:
+- "JenTing Hsiao"
 draft: false
 date: 2021-04-20
+versions:
+- "See Applicable Versions"
 categories:
-  - "longhorn-ui"
+- "longhorn-ui"
 ---
 
 ## Applicable versions
@@ -20,6 +23,7 @@ The Longhorn GUI frontend API requests sometimes failed to reach longhorn-manage
 ## Reason
 
 The API requests would change the protocol between HTTPS/WSS, and the change would lead to a CORS problem.
+<!-- truncate -->
 
 ## Solution
 

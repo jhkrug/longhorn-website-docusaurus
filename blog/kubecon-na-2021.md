@@ -9,6 +9,7 @@ categories:
 Hi Longhorn community members,
 
 Longhorn is going to the KubeCon North America 2021 in 10/11 - 10/15 to serve community users as usual!
+<!-- truncate -->
 
 This time is different than the previous virtual conferences caused by heavy COVID impact. KubeCon will provide in-person and virtual options for visitors to attend. We will have an in-person booth for your visits to have chances to interact with our maintainers to discuss the roadmap, features, questions, ideas, consults, contributions, etc.
 
