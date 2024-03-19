@@ -1,6 +1,6 @@
 ---
 title: Node Maintenance and Kubernetes Upgrade Guide
-sidebar_position: 3
+sidebar_position: 30
 ---
 
 This section describes how to handle planned node maintenance or upgrading Kubernetes version for the cluster.
