@@ -12,6 +12,7 @@ import lhSubstituteCurrentVersion from "./js-lib/longhorn-versions.js";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   markdown: {
+    mermaid: true,
     preprocessor: ({ filePath, fileContent }) => {
       // Process Longhorn versions
       fileContent = lhSubstituteCurrentVersion(fileContent, filePath);
@@ -47,19 +48,84 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
   presets: [
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          includeCurrentVersion: false,
+          lastVersion: "1.6.0",
+          versions: {
+            "1.7.0": {
+              label: "1.7.0-dev",
+              banner: "none",
+            },
+            "1.6.1": {
+              label: "1.6.1-dev",
+              banner: "none",
+            },
+            "1.6.0": {
+              label: "1.6.0",
+              banner: "none",
+            },
+            "1.5.5": {
+              label: "1.5.5-dev",
+              banner: "none",
+            },
+            "1.5.4": {
+              label: "1.5.4",
+              banner: "none",
+            },
+            "1.5.3": {
+              label: "1.5.3",
+              banner: "none",
+            },
+            "1.5.2": {
+              label: "1.5.2",
+              banner: "none",
+            },
+            "1.5.1": {
+              label: "1.5.1",
+              banner: "none",
+            },
+            "1.5.0": {
+              label: "1.5.0",
+              banner: "none",
+            },
+            "1.4.5": {
+              label: "1.4.5-dev",
+              banner: "none",
+            },
+            "1.4.4": {
+              label: "1.4.4",
+              banner: "none",
+            },
+            "1.4.3": {
+              label: "1.4.3",
+              banner: "none",
+            },
+            "1.4.2": {
+              label: "1.4.2",
+              banner: "none",
+            },
+            "1.4.1": {
+              label: "1.4.1",
+              banner: "none",
+            },
+            "1.4.0": {
+              label: "1.4.0",
+              banner: "none",
+            },
+          },
           sidebarPath: "./sidebars.js",
           editUrl: "https://github.com/longhorn/website-docusaurus/docs",
         },
         blog: {
+          blogTitle: "Longhorn Blog",
           showReadingTime: true,
-          blogSidebarTitle: "All posts",
+          postsPerPage: 5,
+          blogSidebarTitle: "All blog posts",
           blogSidebarCount: "ALL",
           authorsMapPath: "authors.yml",
           editUrl: "https://github.com/longhorn/website-docusaurus/blog/",
@@ -79,14 +145,15 @@ const config = {
         routeBasePath: "kb",
         path: "./kb",
         showReadingTime: true,
-        blogSidebarTitle: "All articles",
+        postsPerPage: 5,
+        blogSidebarTitle: "All KB articles",
         blogSidebarCount: "ALL",
         authorsMapPath: "authors.yml",
         editUrl: "https://github.com/longhorn/website-docusaurus/kb/",
       },
     ],
   ],
-
+  themes: ["@docusaurus/theme-mermaid"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -100,7 +167,8 @@ const config = {
         title: "Longhorn",
         logo: {
           alt: "Longhorn Logo",
-          src: "img/logo.svg",
+          src: "img/icon-longhorn.svg",
+          srcDark: "img/icon-longhorn-dark.svg",
         },
         items: [
           {
@@ -119,10 +187,10 @@ const config = {
             label: "Knowledge Base",
             position: "left",
           },
-          /*{
+          {
             type: "search",
             position: "left",
-          },*/
+          },
           {
             href: "https://github.com/longhorn",
             label: "GitHub",
