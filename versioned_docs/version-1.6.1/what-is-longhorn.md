@@ -1,6 +1,6 @@
 ---
 title: What is Longhorn?
-sidebar_position: 1
+sidebar_position: 2
 ---
 Longhorn is a lightweight, reliable and easy-to-use distributed block storage system for Kubernetes.
 

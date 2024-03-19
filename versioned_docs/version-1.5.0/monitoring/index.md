@@ -1,6 +1,6 @@
 ---
 title: Monitoring
-sidebar_position: 5
+sidebar_position: 60
 ---
 
 * Setting up Prometheus and Grafana to monitor Longhorn
