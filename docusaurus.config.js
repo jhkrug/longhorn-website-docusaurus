@@ -1,1 +1,1 @@
-docusaurus.config-runtime.js
+docusaurus.config-runtime-plus-archives.js
