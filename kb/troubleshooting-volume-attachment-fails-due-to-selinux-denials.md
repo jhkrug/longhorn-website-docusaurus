@@ -19,11 +19,11 @@ All Longhorn versions.
 ## Likely environment
 Commonly seen in Fedora downstream distributions (e.g. Fedora, RHEL, Rocky, CentOS, etc.) when `container-selinux` is
 updated beyond version `2.189.0`. This can happen unexpectedly and can catch administrators off guard.
+<!-- truncate -->
 
 ## Symptoms
 Symptoms are the same as those discussed in a [previous KB article that focused on
 OKD](../kb/troubleshooting-volumes-stuck-in-attach-detach-loop-when-using-longhorn-on-okd/).
-<!-- truncate -->
 
 All volumes are stuck in an attach/detach loop. `dmesg` and `ausearch` on storage nodes reveal SELinux issues:
 ```

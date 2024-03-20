@@ -14,11 +14,11 @@ categories:
 ## Applicable versions
 
 All Longhorn versions, but some features are introduced in v1.4.0 or v1.5.0
+<!-- truncate -->
 
 ## Volumes consume much more space than expected
 
 Due to the fact that Longhorn volumes can hold historic data as snapshots, the volume actual size can be much greater than the spec size. For more details, you can check [this section](../docs/1.5.1/volumes-and-nodes/volume-size#volume-actual-size) for a better understanding over the concept of volume size.
-<!-- truncate -->
 
 Besides, some operations like backup, rebuilding, or expansion, will lead to a hidden system snapshot creation. Hence, there may be some snapshots even if users never create a snapshot for a volume manually.
 
