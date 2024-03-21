@@ -1,6 +1,7 @@
 ---
 title: Architecture and Concepts
 sidebar_position: 3
+toc_max_heading_level: 4
 ---
 
 Longhorn creates a dedicated storage controller for each volume and synchronously replicates the volume across multiple replicas stored on multiple nodes.
@@ -14,11 +15,11 @@ For the installation requirements, go to [this section.](./deploy/install#instal
 > This section assumes familiarity with Kubernetes persistent storage concepts. For more information on these concepts, refer to the [appendix.](#appendix-how-persistent-storage-works-in-kubernetes) For help with the terminology used in this page, refer to [this section.](./terminology)
 
 
-# 1. Design
+## 1. Design
 
 The Longhorn design has two layers: the data plane and the controlplane. The Longhorn Engine is a storage controller that corresponds to the data plane, and the Longhorn Manager corresponds to the controlplane.
 
-## 1.1. The Longhorn Manager and the Longhorn Engine
+### 1.1. The Longhorn Manager and the Longhorn Engine
 
 The Longhorn Manager Pod runs on each node in the Longhorn cluster as a Kubernetes [DaemonSet.](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) It is responsible for creating and managing volumes in the Kubernetes cluster, and handles the API calls from the UI or the volume plugins for Kubernetes. It follows the Kubernetes controller pattern, which is sometimes called the operator pattern.
 
@@ -44,7 +45,7 @@ In the figure below,
 
 ![read/write data flow between the volume, controller instance, replica instances, and disks](/img/diagrams/architecture/how-longhorn-works.svg)
 
-## 1.2. Advantages of a Microservices Based Design
+### 1.2. Advantages of a Microservices Based Design
 
 In Longhorn, each Engine only needs to serve one volume, simplifying the design of the storage controllers. Because the failure domain of the controller software is isolated to individual volumes, a controller crash will only impact one volume.
 
@@ -54,7 +55,7 @@ Because each volume has its own controller, the controller and replica instances
 
 Longhorn can create a long-running job to orchestrate the upgrade of all live volumes without disrupting the on-going operation of the system. To ensure that an upgrade does not cause unforeseen issues, Longhorn can choose to upgrade a small subset of the volumes and roll back to the old version if something goes wrong during the upgrade.
 
-## 1.3. CSI Driver
+### 1.3. CSI Driver
 
 The Longhorn CSI driver takes the block device, formats it, and mounts it on the node. Then the [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) bind-mounts the device inside a Kubernetes Pod. This allows the Pod to access the Longhorn volume.
 
@@ -65,7 +66,7 @@ The Kubernetes CSI Driver images are:
 - CSI Node Driver Registrar: quay.io/k8scsi/csi-node-driver-registrar:v1.2.0
 - CSI Resizer: quay.io/k8scsi/csi-resizer:v0.3.0
 
-## 1.4. CSI Plugin
+### 1.4. CSI Plugin
 
 Longhorn is managed in Kubernetes via a [CSI Plugin.](https://kubernetes-csi.github.io/docs/) This allows for easy installation of the Longhorn plugin.
 
@@ -75,13 +76,13 @@ The Kubernetes cluster internally uses the CSI interface to communicate with the
 
 Longhorn does leverage iSCSI, so extra configuration of the node may be required. This may include the installation of open-iscsi or iscsiadm depending on the distribution.
 
-## 1.5. The Longhorn UI
+### 1.5. The Longhorn UI
 
 The Longhorn UI interacts with the Longhorn Manager through the Longhorn API, and acts as a complement of Kubernetes. Through the Longhorn UI, you can manage snapshots, backups, nodes and disks.
 
 Besides, the space usage of the cluster worker nodes is collected and illustrated by the Longhorn UI. See [here](./volumes-and-nodes/node-space-usage) for details.  
 
-# 2. Longhorn Volumes and Primary Storage
+## 2. Longhorn Volumes and Primary Storage
 
 When creating a volume, the Longhorn Manager creates the Longhorn Engine microservice and the replicas for each volume as microservices. Together, these microservices form a Longhorn volume. Each replica should be placed on a different node or on different disks.
 
@@ -89,7 +90,7 @@ After the Longhorn Engine is created by the Longhorn Manager, it connects to the
 
 A Longhorn volume can be created with kubectl.
 
-### 2.1. Thin Provisioning and Volume Size
+#### 2.1. Thin Provisioning and Volume Size
 
 Longhorn is a thin-provisioned storage system. That means a Longhorn volume will only take the space it needs at the moment. For example, if you allocated a 20 GB volume but only use 1GB of it, the actual data size on your disk would be 1 GB. You can see the actual data size in the volume details in the UI.
 
@@ -97,7 +98,7 @@ A Longhorn volume itself cannot shrink in size if you’ve removed content from 
 
 For more introductions about the volume-size related concepts, see this [doc](./volumes-and-nodes/volume-size) for more details.
 
-### 2.2. Reverting Volumes in Maintenance Mode
+#### 2.2. Reverting Volumes in Maintenance Mode
 
 When a volume is attached from the Longhorn UI, there is a checkbox for Maintenance mode. It’s mainly used to revert a volume from a snapshot.
 
@@ -107,7 +108,7 @@ After v0.6.0, the snapshot reverting operation required the volume to be in main
 
 It’s also useful to inspect the volume state without worrying about the data being accessed by accident.
 
-## 2.3. Replicas
+### 2.3. Replicas
 
 Each replica contains a chain of snapshots of a Longhorn volume. A snapshot is like a layer of an image, with the oldest snapshot used as the base layer, and newer snapshots on top. Data is only included in a new snapshot if it overwrites data in an older snapshot. Together, a chain of snapshots shows the current state of the data.
 
@@ -121,7 +122,7 @@ If the current healthy replica count is more than the specified replica count, L
 
 Longhorn replicas are built using Linux [sparse files,](https://en.wikipedia.org/wiki/Sparse_file) which support thin provisioning.
 
-###  2.3.1. How Read and Write Operations Work for Replicas
+####  2.3.1. How Read and Write Operations Work for Replicas
 
 When data is read from a replica of a volume, if the data can be found in the live data, then that data is used. If not, the newest snapshot will be read. If the data is not found in the newest snapshot, the next-oldest snapshot is read, and so on, until the oldest snapshot is read.
 
@@ -156,7 +157,7 @@ The read index is kept in memory and consumes one byte for each 4K block. The by
 
 The read index consumes a certain amount of in-memory data structure for each replica. A 1 TB volume, for example, consumes 256 MB of in-memory read index.
 
-### 2.3.2 How New Replicas are Added
+#### 2.3.2 How New Replicas are Added
 
 When a new replica is added, the existing replicas are synced to the new replica. The first replica is created by taking a new snapshot from the live data.
 
@@ -169,7 +170,7 @@ The following steps show a more detailed breakdown of how Longhorn adds new repl
 1. All the snapshots are synced.
 1. The new replica is set to RW (read-write) mode.
 
-### 2.3.3. How Faulty Replicas are Rebuilt
+#### 2.3.3. How Faulty Replicas are Rebuilt
 
 Longhorn will always try to maintain at least given number of healthy replicas for each volume.
 
@@ -187,7 +188,7 @@ To add the blank replica, the Engine performs the following operations:
 
 Finally, the Longhorn Manager calls the Longhorn Engine to remove the faulty replica from its replica set.
 
-## 2.4. Snapshots
+### 2.4. Snapshots
 
 The snapshot feature enables a volume to be reverted back to a certain point in history. Backups in secondary storage can also be built from a snapshot.
 
@@ -195,7 +196,7 @@ When a volume is restored from a snapshot, it reflects the state of the volume a
 
 The snapshot feature is also a part of Longhorn's rebuilding process. Every time Longhorn detects a replica is down, it will automatically take a (system) snapshot and start rebuilding it on another node.
 
-### 2.4.1. How Snapshots Work
+#### 2.4.1. How Snapshots Work
 
 A snapshot is like a layer of an image, with the oldest snapshot used as the base layer, and newer snapshots on top. Data is only included in a new snapshot if it overwrites data in an older snapshot. Together, a chain of snapshots shows the current state of the data. For a more detailed breakdown of how data is read from a replica, refer to the section on [read and write operations for replicas.](#231-how-read-and-write-operations-work-for-replicas)
 
@@ -203,11 +204,11 @@ Snapshots cannot change after they are created, unless a snapshot is deleted, in
 
 To create a new snapshot, the live data becomes the newest snapshot. Then a new, blank version of the live data is created, taking the place of the old live data.
 
-### 2.4.2. Recurring Snapshots
+#### 2.4.2. Recurring Snapshots
 
 To reduce the space taken by snapshots, user can schedule a recurring snapshot or backup with a number of snapshots to retain, which will automatically create a new snapshot/backup on schedule, then clean up for any excessive snapshots/backups.
 
-### 2.4.3. Deleting Snapshots
+#### 2.4.3. Deleting Snapshots
 
 Unwanted snapshots can be manually deleted through the UI. Any system generated snapshots will be automatically marked for deletion if the deletion of any snapshot was triggered.
 
@@ -219,12 +220,12 @@ Instead, the latest snapshot will be marked as removed, and it will be cleaned u
 
 To clean up the latest snapshot, a new snapshot can be created, then the previous "latest" snapshot can be removed.
 
-### 2.4.4. Storing Snapshots
+#### 2.4.4. Storing Snapshots
 
 Snapshots are stored locally, as a part of each replica of a volume. They are stored on the disk of the nodes within the Kubernetes cluster.
 Snapshots are stored in the same location as the volume data on the host’s physical disk.
 
-### 2.4.5. Crash Consistency
+#### 2.4.5. Crash Consistency
 
 Longhorn is a crash-consistent block storage solution.
 
@@ -236,7 +237,7 @@ To force the data to be written to the block layer at any given moment, the sync
 
 Longhorn runs the sync command automatically before creating a snapshot.
 
-# 3. Backups and Secondary Storage
+## 3. Backups and Secondary Storage
 
 A backup is an object in the backupstore, which is an NFS or S3 compatible object store external to the Kubernetes cluster. Backups provide a form of secondary storage so that even if your Kubernetes cluster becomes unavailable, your data can still be retrieved.
 
@@ -246,7 +247,7 @@ When the backup target is configured in the Longhorn settings, Longhorn can conn
 
 If Longhorn runs in a second Kubernetes cluster, it can also sync disaster recovery volumes to the backups in secondary storage, so that your data can be recovered more quickly in the second Kubernetes cluster.
 
-## 3.1. How Backups Work
+### 3.1. How Backups Work
 
 A backup is created using one snapshot as a source, so that it reflects the state of the volume's data at the time that the snapshot was created.
 
@@ -282,7 +283,7 @@ Volume-level metadata is stored in volume.cfg. The metadata files for each backu
 
 Each 2 MB block (.blk file) is compressed.
 
-## 3.2. Recurring Backups
+### 3.2. Recurring Backups
 
 Backup operations can be scheduled using the recurring snapshot and backup feature, but they can also be done as needed.
 
@@ -290,7 +291,7 @@ It’s recommended to schedule recurring backups for your volumes. If a backupst
 
 Backup creation involves copying the data through the network, so it will take time.
 
-## 3.3. Disaster Recovery Volumes
+### 3.3. Disaster Recovery Volumes
 
 A disaster recovery (DR) volume is a special volume that stores data in a backup cluster in case the whole main cluster goes down. DR volumes are used to increase the resiliency of Longhorn volumes.
 
@@ -311,7 +312,7 @@ The Backup Target in the Longhorn settings cannot be updated if any DR volumes e
 
 After a DR volume is activated, it becomes a normal Longhorn volume and it cannot be deactivated.
 
-## 3.4. Backupstore Update Intervals, RTO, and RPO
+### 3.4. Backupstore Update Intervals, RTO, and RPO
 
 Typically incremental restoration is triggered by the periodic backup store update. Users can set backup store update interval in Setting - General - Backupstore Poll Interval.
 
@@ -324,7 +325,7 @@ The following analysis assumes that the volume creates a backup every hour, and 
 - If the Backupstore Poll Interval is 30 minutes, then there will be at most one backup worth of data since the last restoration. The time for restoring one backup is five minutes, so the RTO would be five minutes.
 - If the Backupstore Poll Interval is 12 hours, then there will be at most 12 backups worth of data since last restoration. The time for restoring the backups is 5 * 12 = 60 minutes, so the RTO would be 60 minutes.
 
-# Appendix: How Persistent Storage Works in Kubernetes
+## Appendix: How Persistent Storage Works in Kubernetes
 
 To understand persistent storage in Kubernetes, it is important to understand Volumes, PersistentVolumes, PersistentVolumeClaims, and StorageClasses, and how they work together.
 
@@ -332,14 +333,14 @@ One important property of a Kubernetes Volume is that it has the same lifecycle 
 
 A [PersistentVolume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is a piece of persistent storage in the Kubernetes cluster, while a [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims) is a request for storage. [StorageClasses](https://kubernetes.io/docs/concepts/storage/storage-classes/) allow new storage to be dynamically provisioned for workloads on demand.
 
-## How Kubernetes Workloads use New and Existing Persistent Storage
+### How Kubernetes Workloads use New and Existing Persistent Storage
 
 Broadly speaking, there are two main ways to use persistent storage in Kubernetes:
 
 - Use an existing persistent volume
 - Dynamically provision new persistent volumes
 
-### Existing Storage Provisioning
+#### Existing Storage Provisioning
 
 To use an existing PV, your application will need to use a PVC that is bound to a PV, and the PV should include the minimum resources that the PVC requires.
 
@@ -356,7 +357,7 @@ if a matching volume does not exist, PersistentVolumeClaims will remain unbound 
 
 In other words, you can create unlimited PVCs, but they will only be bound to PVs if the Kubernetes master can find a sufficient PV that has at least the amount of disk space required by the PVC.
 
-### Dynamic Storage Provisioning
+#### Dynamic Storage Provisioning
 
 For dynamic storage provisioning, your application will need to use a PVC that is bound to a StorageClass. The StorageClass contains the authorization to provision new persistent volumes.
 
@@ -374,7 +375,7 @@ StorageClasses can also be used without explicitly creating a StorageClass objec
 
 Longhorn introduces a Longhorn StorageClass so that your Kubernetes workloads can carve out pieces of your persistent storage as necessary.
 
-## Horizontal Scaling for Kubernetes Workloads with Persistent Storage
+### Horizontal Scaling for Kubernetes Workloads with Persistent Storage
 
 The VolumeClaimTemplate is a StatefulSet spec property, and it provides a way for the block storage solution to scale horizontally for a Kubernetes workload.
 
