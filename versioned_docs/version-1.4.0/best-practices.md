@@ -5,22 +5,6 @@ sidebar_position: 5
 
 We recommend the following setup for deploying Longhorn in production.
 
-- [Minimum Recommended Hardware](#minimum-recommended-hardware)
-- [Architecture](#architecture)
-- [Operating System](#operating-system)
-- [Node and Disk Setup](#node-and-disk-setup)
-  - [Use a Dedicated Disk](#use-a-dedicated-disk)
-  - [Minimal Available Storage and Over-provisioning](#minimal-available-storage-and-over-provisioning)
-  - [Disk Space Management](#disk-space-management)
-  - [Setting up Extra Disks](#setting-up-extra-disks)
-- [Configuring Default Disks Before and After Installation](#configuring-default-disks-before-and-after-installation)
-- [Deploying Workloads](#deploying-workloads)
-- [Volume Maintenance](#volume-maintenance)
-- [Guaranteed Instance Manager CPU](#guaranteed-instance-manager-cpu)
-- [StorageClass](#storageclass)
-- [Scheduling Settings](#scheduling-settings)
-  - [Replica Node Level Soft Anti-Affinity](#replica-node-level-soft-anti-affinity)
-  - [Allow Volume Creation with Degraded Availability](#allow-volume-creation-with-degraded-availability)
 
 ## Minimum Recommended Hardware
 
