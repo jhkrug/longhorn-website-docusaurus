@@ -3,10 +3,6 @@ title: Important Notes
 sidebar_position: 4
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
-</head>
-
 This page lists important notes for Longhorn v1.2.1.
 Please see [here](https://github.com/longhorn/longhorn/releases/tag/v1.2.1) for the full release note.
 

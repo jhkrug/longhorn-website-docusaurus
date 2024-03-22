@@ -4,10 +4,6 @@ description: Run Longhorn on Kubernetes with Rancher 2.x
 sidebar_position: 7
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/install/install-with-rancher"/>
-</head>
-
 One benefit of installing Longhorn through Rancher catalog is that Rancher provides authentication to the Longhorn UI.
 
 If there is a new version of Longhorn available, you will see an `Upgrade Available` sign on the `Catalog Apps` screen. You can click `Upgrade` button to upgrade Longhorn manager. See more about upgrade [here](../upgrade).

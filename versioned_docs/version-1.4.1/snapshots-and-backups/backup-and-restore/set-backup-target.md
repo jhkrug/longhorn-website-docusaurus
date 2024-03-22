@@ -3,10 +3,6 @@ title: Setting a Backup Target
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/backup-and-restore/set-backup-target"/>
-</head>
-
 A backup target is the endpoint used to access a backupstore in Longhorn. A backupstore is a NFS server or S3 compatible server that stores the backups of Longhorn volumes. The backup target can be set at `Settings/General/BackupTarget`.
 
 Saving to an object store such as S3 is preferable because it generally offers better reliability.  Another advantage is that you do not need to mount and unmount the target, which can complicate failover and upgrades.

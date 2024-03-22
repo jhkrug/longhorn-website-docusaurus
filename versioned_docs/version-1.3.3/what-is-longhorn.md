@@ -2,10 +2,6 @@
 title: What is Longhorn?
 sidebar_position: 2
 ---
-
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/what-is-longhorn"/>
-</head>
 Longhorn is a lightweight, reliable and easy-to-use distributed block storage system for Kubernetes.
 
 Longhorn is free, open source software. Originally developed by Rancher Labs, it is now being developed as a incubating project of the Cloud Native Computing Foundation.

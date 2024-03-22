@@ -4,10 +4,6 @@ description: Enable CSI Snapshot Support for Programmatic Creation of Longhorn B
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/csi-snapshot-support/enable-csi-snapshot-support"/>
-</head>
-
 > **Prerequisite**
 >
 > CSI snapshot support is available for Kubernetes versions ≥ **1.17**.

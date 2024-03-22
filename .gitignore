@@ -20,4 +20,3 @@ yarn-debug.log*
 yarn-error.log*
 
 tmp
-files_without_canonical.txt

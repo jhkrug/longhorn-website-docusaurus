@@ -2,10 +2,6 @@
 title: Integrating Longhorn metrics into the Rancher monitoring system
 sidebar_position: 2
 ---
-
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/monitoring/integrating-with-rancher-monitoring"/>
-</head>
 ## About the Rancher Monitoring System
 
 Using Rancher, you can monitor the state and processes of your cluster nodes, Kubernetes components, and software deployments through integration with [Prometheus](https://prometheus.io/), a leading open-source monitoring solution.

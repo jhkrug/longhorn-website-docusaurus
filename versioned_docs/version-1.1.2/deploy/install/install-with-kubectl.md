@@ -4,10 +4,6 @@ description: Install Longhorn with the kubectl client.
 sidebar_position: 8
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/install/install-with-kubectl"/>
-</head>
-
 ## Prerequisites
 
 Each node in the Kubernetes cluster where Longhorn will be installed must fulfill [these requirements.](..#installation-requirements)

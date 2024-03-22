@@ -3,10 +3,6 @@ title: Volume Encryption
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/security/volume-encryption"/>
-</head>
-
 Longhorn supports encrypted volumes by utilizing the linux kernel module `dm_crypt` via `cryptsetup` for the encryption.
 Further we use the Kubernetes secret mechanism for key storage, which can be further encrypted and guarded via appropriate permissions.
 An encrypted volume results in your data being encrypted while in transit as well as at rest, this also means that any backups taken from that volume are also encrypted.

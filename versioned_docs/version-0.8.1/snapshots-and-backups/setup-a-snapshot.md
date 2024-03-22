@@ -3,10 +3,6 @@ title: Create a Snapshot
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/setup-a-snapshot"/>
-</head>
-
 A [snapshot](../concepts#24-snapshots) is the state of a Kubernetes Volume at any given point in time. 
 
 To create a snapshot of an existing cluster,

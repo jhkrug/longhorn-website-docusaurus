@@ -3,10 +3,6 @@ title: Recovering from a Longhorn Backup without System Installed
 sidebar_position: 5
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/data-recovery/recover-without-system"/>
-</head>
-
 This command gives users the ability to restore a backup to a `raw` image or a `qcow2` image. If the backup is based on a backing file, users should provide the backing file as a `qcow2` image with `--backing file` parameter.
 
 1. Copy the [yaml template](https://github.com/longhorn/longhorn/blob/v[[< current-version >]]/examples/restore_to_file.yaml.template): Make a copy of `examples/restore_to_file.yaml.template` as e.g. `restore.yaml`.

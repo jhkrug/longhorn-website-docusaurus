@@ -3,10 +3,6 @@ title: Auto Balance Replicas
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/high-availability/auto-balance-replicas"/>
-</head>
-
 When replicas are scheduled unevenly on nodes or zones, Longhorn `Replica Auto Balance` setting enables the replicas for automatic balancing when a new node is available to the cluster.
 
 ## Replica Auto Balance Settings

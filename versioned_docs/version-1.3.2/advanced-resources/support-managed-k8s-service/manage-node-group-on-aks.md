@@ -3,10 +3,6 @@ title:  Manage Node-Group on Azure AKS
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/support-managed-k8s-service/manage-node-group-on-aks"/>
-</head>
-
 See [Create and manage multiple node pools for a cluster in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/use-multiple-node-pools) for more information.
 
 Following is an example to replace cluster nodes with a new storage size.

@@ -3,10 +3,6 @@ title: Configuring Defaults for Nodes and Disks
 sidebar_position: 6
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/nodes/default-disk-and-node-config"/>
-</head>
-
 _Available as of v0.8.1_
 
 This feature allows the user to customize the default disks and node configurations in Longhorn for newly added nodes using Kubernetes labels and annotations instead of the Longhorn API or UI.

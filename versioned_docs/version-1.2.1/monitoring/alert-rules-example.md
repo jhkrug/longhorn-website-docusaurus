@@ -3,10 +3,6 @@ title: Longhorn Alert Rule Examples
 sidebar_position: 5
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/monitoring/alert-rules-example"/>
-</head>
-
 We provide a couple of example Longhorn alert rules below for your references.
 See [here](./metrics) for a list of all available Longhorn metrics and build your own alert rules.
 

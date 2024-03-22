@@ -3,10 +3,6 @@ title: Use Longhorn Volume as an iSCSI Target
 sidebar_position: 4
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/volumes/iscsi"/>
-</head>
-
 Longhorn supports iSCSI target frontend mode. You can connect to it
 through any iSCSI client, including `open-iscsi`, and virtual machine
 hypervisor like KVM, as long as it's in the same network as the Longhorn system.

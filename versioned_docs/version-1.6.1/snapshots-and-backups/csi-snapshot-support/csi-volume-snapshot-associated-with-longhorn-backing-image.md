@@ -3,10 +3,6 @@ title: CSI VolumeSnapshot Associated with Longhorn BackingImage
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/csi-snapshot-support/csi-volume-snapshot-associated-with-longhorn-backing-image"/>
-</head>
-
 BackingImage in Longhorn is an object that represents a QCOW2 or RAW image which can be set as the backing/base image of a Longhorn volume.
 
 Instead of directly using Longhorn BackingImage resource for BackingImage management. You can also use the generic Kubernetes CSI VolumeSnapshot mechanism. To learn more about the CSI VolumeSnapshot mechanism, click [here](https://kubernetes.io/docs/concepts/storage/volume-snapshots/).

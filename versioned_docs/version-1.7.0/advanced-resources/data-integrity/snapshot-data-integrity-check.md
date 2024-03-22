@@ -3,10 +3,6 @@ title: Snapshot Data Integrity Check
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/data-integrity/snapshot-data-integrity-check"/>
-</head>
-
 Longhorn is capable of hashing snapshot disk files and periodically checking their integrity.
 
 ## Introduction

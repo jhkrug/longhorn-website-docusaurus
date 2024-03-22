@@ -5,10 +5,6 @@ aliases:
 - /spdk/automatic-offline-replica-rebuilding.md
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/features/automatic-offline-replica-rebuilding"/>
-</head>
-
 Longhorn currently does not support online replica rebuilding for volumes that use the V2 Data Engine. To overcome this limitation, an automatic offline replica rebuilding mechanism has been implemented. When a degraded volume is detached, Longhorn attaches the volume in maintenance mode and then initiates the rebuilding process. The volume is detached again once rebuilding is completed.
 
 ## Settings

@@ -3,10 +3,6 @@ title: Node Failure Handling with Longhorn
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/high-availability/node-failure"/>
-</head>
-
 ## What to expect when a Kubernetes Node fails
 
 This section is aimed to inform users of what happens during a node failure and what is expected during the recovery.

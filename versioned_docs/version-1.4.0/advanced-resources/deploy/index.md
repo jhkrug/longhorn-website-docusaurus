@@ -3,10 +3,6 @@ title: Deploy
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
-</head>
-
 * [Customizing Default Settings](./customizing-default-settings)
 * [Air Gap Installation](./airgap)
 * [Taints and Tolerations](./taint-toleration)

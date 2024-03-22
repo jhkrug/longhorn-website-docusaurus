@@ -3,10 +3,6 @@ title:  Talos Linux Support
 sidebar_position: 5
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/os-distro-specific/talos-linux-support"/>
-</head>
-
 ## Requirements
 
 You must meet the following requirements before installing Longhorn on a Talos Linux cluster.

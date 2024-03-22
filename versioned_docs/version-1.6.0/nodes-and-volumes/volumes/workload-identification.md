@@ -3,10 +3,6 @@ title: Viewing Workloads that Use a Volume
 sidebar_position: 5
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/volumes/workload-identification"/>
-</head>
-
 Now users can identify current workloads or workload history for existing Longhorn persistent volumes (PVs) and their history of being bound to persistent volume claims (PVCs).
 
 From the Longhorn UI, go to the **Volume** tab. Each Longhorn volume is listed on the page. The **Attached To** column displays the name of the workload using the volume. If you click the workload name, you will be able to see more details, including the workload type, pod name, and status.

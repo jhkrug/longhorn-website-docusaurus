@@ -3,10 +3,6 @@ title: Recovering from a Full Disk
 sidebar_position: 4
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/data-recovery/full-disk"/>
-</head>
-
 If one disk used by one of the Longhorn replicas is full, that replica will go to the error state, and Longhorn will rebuild another replica on another node/disk.
 
 To recover from a full disk,

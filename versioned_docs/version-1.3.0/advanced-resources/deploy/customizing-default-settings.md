@@ -3,10 +3,6 @@ title: Customizing Default Settings
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/deploy/customizing-default-settings"/>
-</head>
-
 You may customize Longhorn's default settings while installing or upgrading. You may specify, for example, `Create Default Disk With Node Labeled` and `Default Data Path` before starting Longhorn.
 
 The default settings can be customized in the following ways:

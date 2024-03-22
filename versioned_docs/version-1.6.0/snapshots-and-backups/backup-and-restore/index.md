@@ -3,10 +3,6 @@ title: Backup and Restore
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/backup-and-restore/index"/>
-</head>
-
 > Before v1.2.0, Longhorn uses a blocking way for communication with the remote backup target, so there will be some potential voluntary or involuntary factors (ex: network latency) impacting the functions relying on remote backup target like listing backups or even causing further cascading problems after the backup target operation.
 
 > Since v1.2.0, Longhorn starts using an asynchronous way to do backup operations to resolve the abovementioned issues in the previous versions.

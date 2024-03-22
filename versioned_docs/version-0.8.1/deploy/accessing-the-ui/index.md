@@ -3,10 +3,6 @@ title: Accessing the UI
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
-</head>
-
 ## Prerequisites for Access and Authentication
 
 These instructions assume that Longhorn is installed.
