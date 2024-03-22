@@ -3,6 +3,10 @@ title:  Manage Node-Group on GCP GKE
 sidebar_position: 3
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/support-managed-k8s-service/manage-node-group-on-gke"/>
+</head>
+
 See [Migrating workloads to different machine types](https://cloud.google.com/kubernetes-engine/docs/tutorials/migrating-node-pool) for more information.
 
 The following is an example to replace cluster nodes with new storage size.

@@ -3,6 +3,10 @@ title: Customizing Default Settings
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/deploy/customizing-default-settings"/>
+</head>
+
 You may customize Longhorn's default settings when deploying it. You may specify, for example, `Create Default Disk With Node Labeled` and `Default Data Path` before starting Longhorn.
 
 This default setting is only for a Longhorn system that hasn't been deployed. It has no impact on an existing Longhorn system. The settings for any existing Longhorn system should be modified using the Longhorn UI _or_ by kubectl. Reference to the [knowledge base doc](https://longhorn.io/kb/troubleshooting-default-settings-do-not-persist/) for the details.

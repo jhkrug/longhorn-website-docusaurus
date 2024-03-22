@@ -3,6 +3,10 @@ title: Orphaned Data Cleanup
 sidebar_position: 4
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/data-cleanup/orphaned-data-cleanup"/>
+</head>
+
 Longhorn supports orphaned data cleanup. Currently, Longhorn can identify and clean up the orphaned replica directories on disks.
 
 ## Orphaned Replica Directories

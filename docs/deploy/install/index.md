@@ -4,6 +4,10 @@ description: Install Longhorn on Kubernetes
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/install/index"/>
+</head>
+
 > **Note**: This quick installation guide uses some configurations which are not for production usage.
 > Please see [Best Practices](../../best-practices/) for how to configure Longhorn for production usage.
 

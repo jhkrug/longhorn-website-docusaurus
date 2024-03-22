@@ -3,6 +3,10 @@ title: Multiple Disk Support
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/nodes/multidisk"/>
+</head>
+
 Longhorn supports using more than one disk on the nodes to store the volume data.
 
 By default, `/var/lib/longhorn` on the host will be used for storing the volume data. You can avoid using the default directory by adding a new disk, then disable scheduling for `/var/lib/longhorn`.

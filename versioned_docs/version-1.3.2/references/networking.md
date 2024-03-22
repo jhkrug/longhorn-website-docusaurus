@@ -3,6 +3,10 @@ title: Longhorn Networking
 sidebar_position: 3
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/references/networking"/>
+</head>
+
 ### Overview
 
 This page documents the networking communication between components in the Longhorn system. Using this information, users can write Kubernetes NetworkPolicy

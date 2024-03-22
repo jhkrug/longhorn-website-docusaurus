@@ -3,6 +3,10 @@ title: Detach Longhorn Volumes
 sidebar_position: 3
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/volumes/detaching-volumes"/>
+</head>
+
 Shut down all Kubernetes Pods using Longhorn volumes in order to detach the volumes. The easiest way to achieve this is by deleting all workloads and recreate them later after upgrade. If this is not desirable, some workloads may be suspended.
 
 In this section, you'll learn how each workload can be modified to shut down its pods.

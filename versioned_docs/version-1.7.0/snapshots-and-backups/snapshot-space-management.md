@@ -3,6 +3,10 @@ title: Snapshot Space Management
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/snapshot-space-management"/>
+</head>
+
 Starting with v1.6.0, Longhorn allows you to configure the maximum snapshot count and the maximum aggregate snapshot size for each volume. Both settings do not take into account removed snapshots, backing images, and volume head snapshots. When either of these limits is reached, you must delete snapshots before creating new ones.
 
 In earlier versions, the maximum snapshot count is not configurable (the value is 250) and there is no way to limit snapshot space usage.

@@ -3,6 +3,10 @@ title: Upgrading Longhorn Manager
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/upgrade/longhorn-manager"/>
+</head>
+
 ### Upgrading from v1.3.x
 
 We only support upgrading to v[[< current-version >]] from v1.3.x. For other versions, please upgrade to v1.3.x first.

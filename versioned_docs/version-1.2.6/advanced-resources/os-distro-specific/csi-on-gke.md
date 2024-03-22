@@ -3,6 +3,10 @@ title:  Longhorn CSI on GKE
 sidebar_position: 3
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/os-distro-specific/csi-on-gke"/>
+</head>
+
 To operate Longhorn on a cluster provisioned with Google Kubernetes Engine, some additional configuration is required.
 
 1. GKE clusters must use the `Ubuntu` OS instead of `Container-Optimized` OS, in order to satisfy Longhorn's `open-iscsi` dependency.

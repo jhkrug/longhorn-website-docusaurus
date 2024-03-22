@@ -3,6 +3,10 @@ title: Best Practices
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/best-practices"/>
+</head>
+
 We recommend the following setup for deploying Longhorn in production.
 
 

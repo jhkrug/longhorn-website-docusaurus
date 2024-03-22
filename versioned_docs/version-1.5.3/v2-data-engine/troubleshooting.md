@@ -5,6 +5,10 @@ aliases:
 - /spdk/troubleshooting.md
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/troubleshooting"/>
+</head>
+
 - [Installation](#installation)
   - ["Package 'linux-modules-extra-x.x.x-x-generic' Has No Installation Candidate" Error During Installation on Debian Machines](#package-linux-modules-extra-xxx-x-generic-has-no-installation-candidate-error-during-installation-on-debian-machines)
 - [Disk](#disk)

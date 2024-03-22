@@ -3,6 +3,10 @@ title: Python Client
 sidebar_position: 2
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/references/longhorn-client-python"/>
+</head>
+
 Currently, you can operate Longhorn using Longhorn UI.
 We are planning to build a dedicated Longhorn CLI in the upcoming releases.
 

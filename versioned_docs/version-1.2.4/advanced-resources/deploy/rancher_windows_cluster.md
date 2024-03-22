@@ -3,6 +3,10 @@ title: Rancher Windows Cluster
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/deploy/rancher_windows_cluster"/>
+</head>
+
 In this document, you will learn about how to install Longhorn in a Rancher Windows cluster.
 
 ## The characteristic of Rancher Windows Cluster

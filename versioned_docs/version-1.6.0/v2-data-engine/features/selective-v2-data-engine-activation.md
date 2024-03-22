@@ -5,6 +5,10 @@ aliases:
 - /spdk/features/selective-v2-data-engine-activation.md
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/features/selective-v2-data-engine-activation"/>
+</head>
+
 Starting with v1.6.0, Longhorn allows you to enable or disable the V2 Data Engine on specific cluster nodes. You can choose to enable the V2 Data Engine only on powerful nodes in a cluster with varied power states. This is not possible in v1.5.0, which enables the V2 Data Engine on all nodes.
 
 ## Disabling the V2 Data Engine on Specific Nodes

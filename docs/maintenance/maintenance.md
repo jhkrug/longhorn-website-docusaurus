@@ -3,6 +3,10 @@ title: Node Maintenance and Kubernetes Upgrade Guide
 sidebar_position: 30
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/maintenance"/>
+</head>
+
 This section describes how to handle planned node maintenance or upgrading Kubernetes version for the cluster.
 
 - [Updating the Node OS or Container Runtime](#updating-the-node-os-or-container-runtime)

@@ -3,6 +3,10 @@ title: Helm Values
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/references/helm-values"/>
+</head>
+
 ## Values
 
 The `values.yaml` file contains items used to tweak a deployment of this chart.

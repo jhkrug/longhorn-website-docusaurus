@@ -3,6 +3,10 @@ title: Restore Longhorn System
 sidebar_position: 2
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/system-backup-restore/restore-longhorn-system"/>
+</head>
+
 - [What does the Longhorn system restore rollout to the cluster](#longhorn-system-restore-rollouts)
 - [What are the limitations](#limitations)
     - [Restore Path](#restore-path)

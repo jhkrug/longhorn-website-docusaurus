@@ -4,6 +4,10 @@ description: Creating a new volume as a duplicate of an existing volume
 sidebar_position: 3
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/csi-volume-clone"/>
+</head>
+
 Longhorn supports [CSI volume cloning](https://kubernetes.io/docs/concepts/storage/volume-pvc-datasource/).
 Suppose that you have the following `source-pvc`:
 ```yaml

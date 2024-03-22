@@ -3,6 +3,10 @@ title: Trim Filesystem
 sidebar_position: 7
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/volumes/trim-filesystem"/>
+</head>
+
 Since v1.4.0, Longhorn supports trimming filesystem inside Longhorn volumes. Trimming will reclaim space wasted by the removed files of the filesystem.
 
 > **Note:**

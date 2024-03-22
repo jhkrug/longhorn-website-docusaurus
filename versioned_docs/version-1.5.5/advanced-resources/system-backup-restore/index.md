@@ -3,6 +3,10 @@ title: Longhorn System Backup And Restore
 sidebar_position: 4
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
+</head>
+
 > Before v1.4.0, you can restore Longhorn with third-party tools.
 
 - [Restore to a cluster contains data using Rancher snapshot](./restore-to-a-cluster-contains-data-using-rancher-snapshot)

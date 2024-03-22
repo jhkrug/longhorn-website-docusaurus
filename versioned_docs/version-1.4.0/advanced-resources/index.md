@@ -3,6 +3,10 @@ title: Advanced Resources
 sidebar_position: 90
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
+</head>
+
 * [Backing Image](./backing-image)
 * [Fast Replica Rebuild](./fast-replica-rebuild)
 * [Orphaned Data Cleanup](./orphaned-data-cleanup)

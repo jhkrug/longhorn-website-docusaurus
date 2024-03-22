@@ -3,6 +3,10 @@ title: Identifying and Recovering from Data Errors
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/data-recovery/data-error"/>
+</head>
+
 If you've encountered an error message like the following:
 
     'fsck' found errors on device /dev/longhorn/pvc-6288f5ea-5eea-4524-a84f-afa14b85780d but could not correct them.

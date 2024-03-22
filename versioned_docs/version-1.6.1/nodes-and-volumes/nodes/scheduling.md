@@ -2,6 +2,10 @@
 title: Scheduling
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/nodes/scheduling"/>
+</head>
+
 In this section, you'll learn how Longhorn schedules replicas based on multiple factors.
 
 ### Scheduling Policy

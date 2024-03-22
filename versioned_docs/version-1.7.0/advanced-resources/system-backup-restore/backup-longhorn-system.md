@@ -3,6 +3,10 @@ title: Backup Longhorn System
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/system-backup-restore/backup-longhorn-system"/>
+</head>
+
 - [What is in the Longhorn system backup bundle](#longhorn-system-backup-bundle)
 - [How to create a Longhorn system backup](#create-longhorn-system-backup)
     - [Prerequisite](#prerequisite)

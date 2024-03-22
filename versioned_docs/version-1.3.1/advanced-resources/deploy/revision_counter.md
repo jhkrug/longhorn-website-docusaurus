@@ -3,6 +3,10 @@ title: Revision Counter
 sidebar_position: 7
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/deploy/revision_counter"/>
+</head>
+
 The revision counter is a strong mechanism that Longhorn uses to track each replica's updates.
 
 During replica creation, Longhorn will create a 'revision.counter' file with its initial counter set to 0. And for every write to the replica, the counter in 'revision.counter' file will be increased by 1.

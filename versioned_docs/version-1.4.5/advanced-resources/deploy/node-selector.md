@@ -3,6 +3,10 @@ title: Node Selector
 sidebar_position: 4
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/deploy/node-selector"/>
+</head>
+
 If you want to restrict Longhorn components to only run on a particular set of nodes, you can set node selector for all Longhorn components.
 For example, you want to install Longhorn in a cluster that has both Linux nodes and Windows nodes but Longhorn cannot run on Windows nodes.
 In this case, you can set the node selector to restrict Longhorn to only run on Linux nodes.

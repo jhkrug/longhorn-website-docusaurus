@@ -3,6 +3,10 @@ title: Recurring Snapshots and Backups
 sidebar_position: 3
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/scheduling-backups-and-snapshots"/>
+</head>
+
 From the Longhorn UI, recurring snapshots and backups can be scheduled.
 
 To set up a schedule, you will go to the volume detail view in Longhorn. Then you will set:

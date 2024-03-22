@@ -4,6 +4,10 @@ description: Install Longhorn on Kubernetes
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
+</head>
+
 Longhorn can be installed on a Kubernetes cluster in several ways:
 
 - [kubectl](./install-with-kubectl/)
