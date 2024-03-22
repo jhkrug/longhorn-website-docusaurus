@@ -119,6 +119,27 @@ const config = {
           autoCollapseCategories: true,
         },
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: "U8UCEP4M9V",
+
+        // Public API key: it is safe to commit it
+        apiKey: "f70f0002b318431425da489b9897dd13",
+
+        indexName: "main--longhornio-usaurus",
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: "search",
+      },
       navbar: {
         title: "Longhorn",
         logo: {
