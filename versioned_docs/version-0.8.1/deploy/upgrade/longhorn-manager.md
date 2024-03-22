@@ -3,6 +3,10 @@ title: Upgrading Longhorn Manager
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/upgrade/longhorn-manager"/>
+</head>
+
 - [Upgrading Longhorn Manager from v0.7.0+](#upgrading-longhorn-manager-from-v070)
 - [Upgrading from v0.6.2 or older version to v0.8.1](#upgrading-from-v062-or-older-version-to-v081)
 - [Upgrading Longhorn Manager from v0.6.2 to v0.7.0](#upgrading-longhorn-manager-from-v062-to-v070)

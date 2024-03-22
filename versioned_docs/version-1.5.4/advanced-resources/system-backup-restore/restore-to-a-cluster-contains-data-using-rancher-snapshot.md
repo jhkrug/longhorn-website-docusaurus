@@ -3,6 +3,10 @@ title: Restore to a cluster contains data using Rancher snapshot
 sidebar_position: 4
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/system-backup-restore/restore-to-a-cluster-contains-data-using-rancher-snapshot"/>
+</head>
+
 This doc describes what users need to do after restoring the cluster with a Rancher snapshot.
 
 ## Assumptions:

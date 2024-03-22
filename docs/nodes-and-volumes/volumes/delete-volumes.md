@@ -2,6 +2,10 @@
 title: Delete Longhorn Volumes
 sidebar_position: 2
 ---
+
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/volumes/delete-volumes"/>
+</head>
 Once you are done utilizing a Longhorn volume for storage, there are a number of ways to delete the volume, depending on how you used the volume.
 
 ## Deleting Volumes Through Kubernetes

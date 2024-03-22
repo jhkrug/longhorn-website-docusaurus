@@ -3,6 +3,10 @@ title: Manually Upgrading Longhorn Engine
 sidebar_position: 2
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/upgrade/upgrade-engine"/>
+</head>
+
 In this section, you'll learn how to manually upgrade the Longhorn Engine from the Longhorn UI.
 
 ### Prerequisites

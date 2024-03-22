@@ -3,6 +3,10 @@ title: Examples
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/references/examples"/>
+</head>
+
 For reference, this page provides examples of Kubernetes resources that use Longhorn storage.
 
 - [Block volume](#block-volume)

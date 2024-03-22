@@ -3,6 +3,10 @@ title: Install with Helm
 sidebar_position: 9
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/install/install-with-helm"/>
+</head>
+
 In this section, you'll learn how to install Longhorn with Helm.
 
 ### Prerequisites

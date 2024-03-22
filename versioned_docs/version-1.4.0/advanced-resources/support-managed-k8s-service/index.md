@@ -3,6 +3,10 @@ title: Support Managed Kubernetes Service
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
+</head>
+
 * [Manage Node-Group on AWS EKS](./manage-node-group-on-eks)
 * [Manage Node-Group on Azure AKS](./manage-node-group-on-aks)
 * [Manage Node-Group on GCP GKE](./manage-node-group-on-gke)

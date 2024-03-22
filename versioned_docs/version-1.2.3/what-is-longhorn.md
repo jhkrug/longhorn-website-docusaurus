@@ -2,6 +2,10 @@
 title: What is Longhorn?
 sidebar_position: 2
 ---
+
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/what-is-longhorn"/>
+</head>
 Longhorn is a lightweight, reliable and easy-to-use distributed block storage system for Kubernetes.
 
 Longhorn supports the following architectures:

@@ -3,6 +3,10 @@ title: Migrating from the Flexvolume Driver to CSI
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/driver-migration/migrating-flexvolume"/>
+</head>
+
 As of Longhorn v0.8.0, the Flexvolume driver is no longer supported. This guide will show you how to migrate from the Flexvolume driver to CSI. CSI is the newest out-of-tree Kubernetes storage interface.
 
 > Note that the volumes created and used through one driver won't be recognized by Kubernetes using the other driver. So please don't switch the driver (e.g. during an upgrade) if you have existing volumes created using the old driver.

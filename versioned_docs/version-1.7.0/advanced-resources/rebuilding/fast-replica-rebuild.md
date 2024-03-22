@@ -3,6 +3,10 @@ title: Fast Replica Rebuild
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/rebuilding/fast-replica-rebuild"/>
+</head>
+
 Longhorn supports fast replica rebuilding based on the checksums of snapshot disk files.
 
 ## Introduction

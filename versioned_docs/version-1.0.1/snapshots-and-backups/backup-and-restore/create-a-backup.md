@@ -3,6 +3,10 @@ title: Create a Backup
 sidebar_position: 2
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/backup-and-restore/create-a-backup"/>
+</head>
+
 Backups in Longhorn are snapshots that are moved off-cluster into a backupstore. A backup of a snapshot is copied to the backupstore, and the endpoint to access the backupstore is the backup target.
 
 > **Prerequisite:** A backup target must be set up. For more information, see [Set the BackupTarget](./set-backup-target). If the BackupTarget has not been set, you'll be presented with an error.

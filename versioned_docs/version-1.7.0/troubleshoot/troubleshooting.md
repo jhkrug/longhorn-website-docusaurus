@@ -3,6 +3,10 @@ title: Troubleshooting Problems
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/troubleshoot/troubleshooting"/>
+</head>
+
 - [Common issues](#common-issues)
   - [Volume can be attached/detached from UI, but Kubernetes Pod/StatefulSet etc cannot use it](#volume-can-be-attacheddetached-from-ui-but-kubernetes-podstatefulset-etc-cannot-use-it)
     - [Using with Flexvolume Plugin](#using-with-flexvolume-plugin)

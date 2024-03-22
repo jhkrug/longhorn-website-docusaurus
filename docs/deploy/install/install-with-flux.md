@@ -3,6 +3,10 @@ title: Install with Flux
 sidebar_position: 11
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/install/install-with-flux"/>
+</head>
+
 ## Prerequisites
 - Your workstation: Install [Helm](https://helm.sh/docs/) v3.0 or later.
 - Kubernetes cluster:

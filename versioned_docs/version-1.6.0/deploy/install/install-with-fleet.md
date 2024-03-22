@@ -3,6 +3,10 @@ title: Install with Fleet
 sidebar_position: 10
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/install/install-with-fleet"/>
+</head>
+
 ## Prerequisites
 - Your workstation: Install [Helm](https://helm.sh/docs/) v3.0 or later.
 - Kubernetes cluster:

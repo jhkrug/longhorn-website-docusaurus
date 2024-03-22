@@ -5,6 +5,10 @@ aliases:
 - /spdk/features/_index.md
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/features/index"/>
+</head>
+
 - Support for AMD64 and ARM64 platforms
 - Volume lifecycle (creation, attachment, detachment and deletion)
 - Degraded volume

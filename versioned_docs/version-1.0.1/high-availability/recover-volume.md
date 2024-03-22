@@ -3,6 +3,10 @@ title: Recover Volume after Unexpected Detachment
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/high-availability/recover-volume"/>
+</head>
+
 Longhorn can automatically reattach then remount volumes if an unexpected detachment happens, which can happen during a [Kubernetes upgrade](https://github.com/longhorn/longhorn/issues/703) or a [Docker reboot](https://github.com/longhorn/longhorn/issues/686).
 
 > **Note:** This section assumes familiarity with Linux storage concepts such as attaching and mounting volumes, and [Kubernetes configuration of persistent volume storage.](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage#create-a-pod)

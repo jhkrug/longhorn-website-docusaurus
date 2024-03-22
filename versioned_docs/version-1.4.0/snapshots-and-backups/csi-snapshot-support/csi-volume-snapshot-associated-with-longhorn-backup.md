@@ -3,6 +3,10 @@ title: CSI VolumeSnapshot Associated with Longhorn Backup
 sidebar_position: 3
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/csi-snapshot-support/csi-volume-snapshot-associated-with-longhorn-backup"/>
+</head>
+
 Backups in Longhorn are objects in an off-cluster backupstore, and the endpoint to access the backupstore is the backup target. For more information, see [this section.](../../concepts#31-how-backups-work)
 
 To programmatically create backups, you can use the generic Kubernetes CSI VolumeSnapshot mechanism. To learn more about the CSI VolumeSnapshot mechanism, click [here](https://kubernetes.io/docs/concepts/storage/volume-snapshots/).

@@ -3,6 +3,10 @@ title: High Availability
 sidebar_position: 50
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
+</head>
+
 * [Auto Balance Replicas](./auto-balance-replicas)
 * [Data Locality](./data-locality)
 * [Kubernetes Cluster Autoscaler Support (Experimental)](./k8s-cluster-autoscaler)

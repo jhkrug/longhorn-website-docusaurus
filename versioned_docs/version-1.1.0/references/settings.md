@@ -3,6 +3,10 @@ title: Settings Reference
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/references/settings"/>
+</head>
+
 - [Customizing Default Settings](#customizing-default-settings)
 
 - [General](#general)

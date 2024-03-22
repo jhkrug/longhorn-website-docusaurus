@@ -3,6 +3,10 @@ title: Restore Volume Recurring Jobs from a Backup
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/backup-and-restore/restore-recurring-jobs-from-a-backup"/>
+</head>
+
 Since v1.4.0, Longhorn supports recurring jobs backup and restore along with the volume backup and restore. When restoring a backup volume, if users enable the `Restore Volume Recurring Jobs` setting, the original recurring jobs of the volume will be restored back accordingly.
 
 For more information on the setting `Restore Volume Recurring Jobs`, refer to the [settings](../../references/settings#restore-volume-recurring-jobs) section.

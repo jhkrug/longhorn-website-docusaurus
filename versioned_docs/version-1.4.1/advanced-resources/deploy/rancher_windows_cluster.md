@@ -3,6 +3,10 @@ title: Rancher Windows Cluster
 sidebar_position: 5
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/deploy/rancher_windows_cluster"/>
+</head>
+
 Rancher can provision a Windows cluster with combination of Linux worker nodes and Windows worker nodes.
 For more information on the Rancher Windows cluster, see the official [Rancher documentation](https://rancher.com/docs/rancher/v2.x/en/cluster-provisioning/rke-clusters/windows-clusters/).
 

@@ -3,6 +3,10 @@ title: Storage Class Parameters
 sidebar_position: 1
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/references/storage-class-parameters"/>
+</head>
+
 ## Overview
 
 Storage Class as a resource object has a number of settable parameters.  Here's a sample YAML:

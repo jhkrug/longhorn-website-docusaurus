@@ -5,6 +5,10 @@ aliases:
 - /spdk/prerequisites.md
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/prerequisites"/>
+</head>
+
 ## Prerequisites
 
 Longhorn nodes must meet the following requirements:

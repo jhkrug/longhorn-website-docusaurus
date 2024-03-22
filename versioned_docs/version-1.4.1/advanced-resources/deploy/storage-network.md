@@ -3,6 +3,10 @@ title: Storage Network
 sidebar_position: 8
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/deploy/storage-network"/>
+</head>
+
 By Default, Longhorn uses the default Kubernetes cluster CNI network that is limited to a single interface and shared with other workloads cluster-wide. In case you have a situation where network segregation is needed, Longhorn supports isolating Longhorn in-cluster data traffic with the Storage Network setting.
 
 The Storage Network setting takes Multus NetworkAttachmentDefinition in `<NAMESPACE>/<NAME>` format.

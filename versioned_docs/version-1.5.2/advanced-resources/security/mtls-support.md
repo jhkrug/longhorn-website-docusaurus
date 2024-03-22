@@ -3,6 +3,10 @@ title: MTLS Support
 sidebar_position: 6
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/security/mtls-support"/>
+</head>
+
 Longhorn supports MTLS to secure and encrypt the grpc communication between the control plane (longhorn-manager) and the data plane (instance-managers).
 For Certificate setup we use the Kubernetes secret mechanism in combination with an optional secret mount for the longhorn-manager/instance-manager.
 

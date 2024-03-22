@@ -3,6 +3,10 @@ title: Restore cluster with a Rancher snapshot
 sidebar_position: 4
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/cluster-restore/rancher-cluster-restore"/>
+</head>
+
 This doc describes what users need to do after restoring the cluster with a Rancher snapshot.
 
 ## Assumptions:

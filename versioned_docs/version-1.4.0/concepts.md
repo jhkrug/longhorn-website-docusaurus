@@ -4,6 +4,10 @@ sidebar_position: 3
 toc_max_heading_level: 4
 ---
 
+<head>
+  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/concepts"/>
+</head>
+
 Longhorn creates a dedicated storage controller for each volume and synchronously replicates the volume across multiple replicas stored on multiple nodes.
 
 The storage controller and replicas are themselves orchestrated using Kubernetes.
