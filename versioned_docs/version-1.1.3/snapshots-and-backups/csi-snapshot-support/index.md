@@ -4,10 +4,6 @@ description: Creating and Restoring Longhorn Backups via the kubernetes CSI snap
 sidebar_position: 3
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/csi-snapshot-support/index"/>
-</head>
-
 ## History
 - [Github Issue](https://github.com/longhorn/longhorn/issues/304)
 - [Longhorn Enhancement Proposal](https://github.com/longhorn/longhorn/blob/master/enhancements/20200904-csi-snapshot-support.md)

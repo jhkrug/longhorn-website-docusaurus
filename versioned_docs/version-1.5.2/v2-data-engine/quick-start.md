@@ -3,10 +3,6 @@ title: Quick Start
 sidebar_position: 3
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/quick-start"/>
-</head>
-
 **Table of Contents**
 - [Prerequisites](#prerequisites)
   - [Configure Kernel Modules and Huge Pages](#configure-kernel-modules-and-huge-pages)

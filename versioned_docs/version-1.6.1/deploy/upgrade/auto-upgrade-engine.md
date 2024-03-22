@@ -3,10 +3,6 @@ title: Automatically Upgrading Longhorn Engine
 sidebar_position: 3
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/upgrade/auto-upgrade-engine"/>
-</head>
-
 Since Longhorn v1.1.1, we provide an option to help you automatically upgrade Longhorn volumes to the new default engine version after upgrading Longhorn manager.
 This feature reduces the amount of manual work you have to do when upgrading Longhorn.
 There are a few concepts related to this feature as listed below:

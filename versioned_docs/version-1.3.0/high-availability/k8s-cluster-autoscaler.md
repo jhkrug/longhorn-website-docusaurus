@@ -3,10 +3,6 @@ title: Kubernetes Cluster Autoscaler Support (Experimental)
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/high-availability/k8s-cluster-autoscaler"/>
-</head>
-
 By default, Longhorn blocks Kubernetes Cluster Autoscaler from scaling down nodes because:
 - Longhorn creates PodDisruptionBudgets for all engine and replica instance-manager pods.
 - Longhorn instance manager pods have strict PodDisruptionBudgets.

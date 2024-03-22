@@ -3,10 +3,6 @@ title: Backing Image Backup
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/backing-image/backing-image-backup"/>
-</head>
-
 As of v1.6.0, Longhorn supports backing up of backing images.
 
 ## Prerequisites

@@ -3,10 +3,6 @@ title:  Upgrade Kubernetes on Azure AKS
 sidebar_position: 5
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/support-managed-k8s-service/upgrade-k8s-on-aks"/>
-</head>
-
 AKS provides `az aks upgrade` for in-places nodes upgrade by node reimaged, but this will cause the original Longhorn disks missing, then there will be no disks allowing replica rebuilding in upgraded nodes anymore.
 
 We suggest using node-pool replacement to upgrade the agent nodes but use `az aks upgrade` for control plane nodes to ensure data safety.

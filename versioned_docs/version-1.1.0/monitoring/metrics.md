@@ -2,10 +2,6 @@
 title: Longhorn Metrics for Monitoring
 sidebar_position: 2
 ---
-
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/monitoring/metrics"/>
-</head>
 ## Volume
 
 | Name | Description  | Example |

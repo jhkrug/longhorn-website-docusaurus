@@ -3,10 +3,6 @@ title: Install with ArgoCD
 sidebar_position: 12
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/install/install-with-argocd"/>
-</head>
-
 ## Prerequisites
 - Your workstation: Install the [Argo CD CLI](https://argo-cd.readthedocs.io/en/stable/cli_installation/).
 - Kubernetes cluster:

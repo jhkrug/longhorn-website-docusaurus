@@ -3,10 +3,6 @@ title: Kubelet Volume Metrics Support
 sidebar_position: 4
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/monitoring/kubelet-volume-metrics"/>
-</head>
-
 ## About Kubelet Volume Metrics
 
 Kubelet exposes [the following metrics](https://github.com/kubernetes/kubernetes/blob/4b24dca228d61f4d13dcd57b46465b0df74571f6/pkg/kubelet/metrics/collectors/volume_stats.go#L27):

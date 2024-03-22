@@ -3,10 +3,6 @@ title: Uninstall Longhorn
 sidebar_position: 10
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
-</head>
-
 In this section, you'll learn how to uninstall Longhorn.
 
 

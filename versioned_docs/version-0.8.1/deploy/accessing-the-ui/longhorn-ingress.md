@@ -3,10 +3,6 @@ title:  Create NGINX Ingress Controller with Basic Authentication
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/accessing-the-ui/longhorn-ingress"/>
-</head>
-
 If you install Longhorn on a Kubernetes cluster with kubectl or Helm, you will need to create an Ingress controller to allow external traffic to reach the Longhorn UI.
 
 Authentication is not enabled by default for kubectl and Helm installations. In these steps, you'll learn how to create an Ingress controller with basic authentication.

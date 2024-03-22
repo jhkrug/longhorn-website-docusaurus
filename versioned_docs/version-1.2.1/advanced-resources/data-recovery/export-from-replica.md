@@ -3,10 +3,6 @@ title: Exporting a Volume from a Single Replica
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/data-recovery/export-from-replica"/>
-</head>
-
 Each replica of a Longhorn volume contains the full data for the volume.
 
 If the whole Kubernetes cluster or Longhorn system goes offline, the following steps can be used to retrieve the data of the volume.

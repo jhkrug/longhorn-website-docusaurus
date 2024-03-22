@@ -3,10 +3,6 @@ title: Recover Volume after Unexpected Detachment
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/high-availability/recover-volume"/>
-</head>
-
 When an unexpected detachment happens, which can happen during a [Kubernetes upgrade](https://github.com/longhorn/longhorn/issues/703), a [Docker reboot](https://github.com/longhorn/longhorn/issues/686), or a network disconnection,
 Longhorn automatically deletes the workload pod if the pod is managed by a controller (e.g. deployment, statefulset, daemonset, etc...).
 By deleting the pod, its controller restarts the pod and Kubernetes handles volume reattachment and remount.

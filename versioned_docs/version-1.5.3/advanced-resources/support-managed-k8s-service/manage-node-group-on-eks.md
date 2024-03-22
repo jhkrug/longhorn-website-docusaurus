@@ -3,10 +3,6 @@ title:  Manage Node-Group on AWS EKS
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/support-managed-k8s-service/manage-node-group-on-eks"/>
-</head>
-
 EKS supports configuring the same launch template. The nodes in the node-group will be recycled by new nodes with new configurations when updating the launch template version.
 
 See [Launch template support](https://docs.aws.amazon.com/eks/latest/userguide/launch-templates.html) for more information.

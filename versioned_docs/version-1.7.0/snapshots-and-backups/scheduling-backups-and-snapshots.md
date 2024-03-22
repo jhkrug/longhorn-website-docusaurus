@@ -3,10 +3,6 @@ title: Recurring Snapshots and Backups
 sidebar_position: 3
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/scheduling-backups-and-snapshots"/>
-</head>
-
 From the Longhorn UI, the volume can refer to recurring snapshots and backups as independent jobs or as recurring job groups.
 
 To create a recurring job, you can go to the `Recurring Job` page in Longhorn and `Create Recurring Job` or in the volume detail view in Longhorn.

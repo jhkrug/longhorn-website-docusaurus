@@ -3,10 +3,6 @@ title: Restore to a new cluster using Velero
 sidebar_position: 4
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/system-backup-restore/restore-to-a-new-cluster-using-velero"/>
-</head>
-
 This doc instructs how users can restore workloads with Longhorn system to a new cluster via Velero.
 
 > **Note:** Need to use [Velero CSI plugin](https://github.com/vmware-tanzu/velero-plugin-for-csi) ≥ 0.4 to ensure restoring PersistentVolumeClaim successfully. Visit [here](/kb/troubleshooting-restore-pvc-stuck-using-velero-csi-plugin-version-lower-than-0.4) to get more information.

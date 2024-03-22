@@ -3,10 +3,6 @@ title: Restore from a Backup
 sidebar_position: 3
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/backup-and-restore/restore-from-a-backup"/>
-</head>
-
 Longhorn can easily restore backups to a volume. 
 
 For more information on how backups work, refer to the [concepts](../../concepts#3-backups-and-secondary-storage) section.

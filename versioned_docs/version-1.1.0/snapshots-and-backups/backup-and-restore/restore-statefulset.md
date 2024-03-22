@@ -2,10 +2,6 @@
 title: Restoring Volumes for Kubernetes StatefulSets
 sidebar_position: 4
 ---
-
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/backup-and-restore/restore-statefulset"/>
-</head>
 Longhorn supports restoring backups, and one of the use cases for this feature is to restore data for use in a Kubernetes StatefulSet, which requires restoring a volume for each replica that was backed up.
 
 To restore, follow the below instructions. The example below uses a StatefulSet with one volume attached to each Pod and two replicas.

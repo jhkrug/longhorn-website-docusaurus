@@ -3,10 +3,6 @@ title: Upgrade
 sidebar_position: 3
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/index"/>
-</head>
-
 Here we cover how to upgrade to the latest Longhorn from all previous releases.
 
 # Deprecation & Incompatibility

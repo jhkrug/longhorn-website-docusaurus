@@ -4,10 +4,6 @@ description: Enable CSI Snapshot Support for Programmatic Creation of Longhorn B
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/snapshots-and-backups/csi-snapshot-support/enable-csi-snapshot-support"/>
-</head>
-
 > **Prerequisite**
 >
 > It is the responsibility of the Kubernetes distribution to deploy the snapshot controller as well as the related custom resource definitions.

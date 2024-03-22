@@ -3,10 +3,6 @@ title: Evicting Replicas on Disabled Disks or Nodes
 sidebar_position: 5
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/nodes/disks-or-nodes-eviction"/>
-</head>
-
 Longhorn supports auto eviction for evicting the replicas on the selected disabled disks or nodes to other suitable disks and nodes. Meanwhile the same level of high availability is maintained during the eviction.
 
 > **Note:** This eviction feature can only be enabled when the selected disks or nodes have scheduling disabled. And during the eviction time, the selected disks or nodes cannot be re-enabled for scheduling.

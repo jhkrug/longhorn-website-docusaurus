@@ -3,10 +3,6 @@ title: Node Space Usage
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/nodes/node-space-usage"/>
-</head>
-
 In this section, you'll have a better understanding of the space usage info presented by the Longhorn UI. 
 
 

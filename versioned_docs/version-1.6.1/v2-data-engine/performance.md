@@ -5,10 +5,6 @@ aliases:
 - /spdk/performance.md
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/performance"/>
-</head>
-
 ## Performance Measurement Tools
 
 - [KBench](https://github.com/yasker/kbench): Used to benchmark cluster storage performance

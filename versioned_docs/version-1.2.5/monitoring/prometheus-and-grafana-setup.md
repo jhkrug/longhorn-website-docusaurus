@@ -3,10 +3,6 @@ title: Setting up Prometheus and Grafana to monitor Longhorn
 sidebar_position: 1
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/monitoring/prometheus-and-grafana-setup"/>
-</head>
-
 ## Overview
 
 Longhorn natively exposes metrics in [Prometheus text format](https://prometheus.io/docs/instrumenting/exposition_formats#text-based-format) on a REST endpoint `http://LONGHORN_MANAGER_IP:PORT/metrics`.

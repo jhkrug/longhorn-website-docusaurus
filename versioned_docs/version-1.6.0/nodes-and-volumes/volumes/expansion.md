@@ -3,10 +3,6 @@ title: Volume Expansion
 sidebar_position: 6
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/volumes/expansion"/>
-</head>
-
 Volumes are expanded in two stages. First, Longhorn resizes the block device, then it expands the filesystem.
 
 Since v1.4.0, Longhorn supports online expansion. Most of the time Longhorn can directly expand an attached volumes without limitations, no matter if the volume is being R/W or rebuilding.

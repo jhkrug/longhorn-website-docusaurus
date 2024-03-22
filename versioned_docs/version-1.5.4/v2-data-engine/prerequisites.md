@@ -3,10 +3,6 @@ title: Prerequisites
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/v2-data-engine/prerequisites"/>
-</head>
-
 ## Prerequisites
 
 Longhorn nodes must meet the following requirements:

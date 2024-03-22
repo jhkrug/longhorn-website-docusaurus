@@ -3,10 +3,6 @@ title: Upgrading Longhorn Engine
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/deploy/upgrade/upgrade-engine"/>
-</head>
-
 In this section, you'll learn how to upgrade the Longhorn Engine from the Longhorn UI.
 
 If the live upgrade is not available, or if a volume is stuck in a degraded state, do an [offline upgrade.](#offline-upgrade)

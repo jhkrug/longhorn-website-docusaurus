@@ -3,10 +3,6 @@ title: Support Bundle
 sidebar_position: 2
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/troubleshoot/support-bundle"/>
-</head>
-
 Since v1.4.0, Longhorn replaced the in-house support bundle generation with a general-purpose [support bundle kit](https://github.com/rancher/support-bundle-kit). 
 
 You can click the `Generate Support Bundle` at the bottom of Longhorn UI to download a zip file containing cluster manifests and logs.

@@ -3,10 +3,6 @@ title: Identifying Corrupted Replicas
 sidebar_position: 3
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/data-recovery/corrupted-replica"/>
-</head>
-
 In the case that one of the disks used by Longhorn went bad, you might experience intermittent input/output errors when using a Longhorn volume. 
 
 For example, one file sometimes cannot be read, but later it can. In this scenario, it's likely one of the disks went bad, resulting in one of the replicas returning incorrect data to the user.

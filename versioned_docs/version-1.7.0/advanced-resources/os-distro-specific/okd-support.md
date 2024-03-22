@@ -3,10 +3,6 @@ title:  OCP/OKD Support
 sidebar_position: 4
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/advanced-resources/os-distro-specific/okd-support"/>
-</head>
-
 To deploy Longhorn on a cluster provisioned with OpenShift 4.x, some additional configurations are required.
 
 - [Install Longhorn](#install-longhorn)

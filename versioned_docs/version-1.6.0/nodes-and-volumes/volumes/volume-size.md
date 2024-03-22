@@ -3,10 +3,6 @@ title: Volume Size
 sidebar_position: 4
 ---
 
-<head>
-  <link rel="canonical" href="https://main--longhornio-docusaurus.netlify.app/nodes-and-volumes/volumes/volume-size"/>
-</head>
-
 In this section, you'll have a better understanding of concepts related to volume size.
 
 ## Volume `Size`:
