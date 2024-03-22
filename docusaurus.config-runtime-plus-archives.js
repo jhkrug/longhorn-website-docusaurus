@@ -251,7 +251,6 @@ const config = {
       algolia: {
         // The application ID provided by Algolia
         appId: "U8UCEP4M9V",
-
         // Public API key: it is safe to commit it
         apiKey: "f70f0002b318431425da489b9897dd13",
 
