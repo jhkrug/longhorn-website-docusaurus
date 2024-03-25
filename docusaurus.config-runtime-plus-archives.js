@@ -283,12 +283,12 @@ const config = {
             label: "Documentation",
           },
           {
-            href: "/blog",
+            to: "/blog",
             label: "Blog",
             position: "left",
           },
           {
-            href: "/kb",
+            to: "/kb",
             label: "Knowledge Base",
             position: "left",
           },
