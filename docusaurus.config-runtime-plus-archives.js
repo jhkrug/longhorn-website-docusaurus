@@ -24,7 +24,7 @@ const config = {
   },
   title: "Longhorn",
   tagline:
-    "Longhorn is a lightweight, reliable, and powerful distributed block storage system for Kubernetes.",
+    "Longhorn — the lightweight, reliable, and powerful distributed block storage system for Kubernetes.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
