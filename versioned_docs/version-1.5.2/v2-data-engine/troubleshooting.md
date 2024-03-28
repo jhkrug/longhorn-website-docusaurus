@@ -3,10 +3,6 @@ title: Troubleshooting
 sidebar_position: 6
 ---
 
-- [Installation](#installation)
-  - ["Package 'linux-modules-extra-x.x.x-x-generic' Has No Installation Candidate" Error During Installation on Debian Machines](#package-linux-modules-extra-xxx-x-generic-has-no-installation-candidate-error-during-installation-on-debian-machines)
-- [Disk](#disk)
-  - ["Invalid argument" Error in Disk Status After Adding a Block-Type Disk](#invalid-argument-error-in-disk-status-after-adding-a-block-type-disk)
 
 ---
 

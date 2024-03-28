@@ -5,15 +5,6 @@ sidebar_position: 5
 
 For reference, this page provides examples of Kubernetes resources that use Longhorn storage.
 
-- [Block volume](#block-volume)
-- [CSI persistent volume](#csi-persistent-volume)
-- [Deployment](#deployment)
-- [Pod with PersistentVolumeClaim](#pod-with-persistentvolumeclaim)
-- [Restore to file](#restore-to-file)
-- [Simple Pod](#simple-pod)
-- [Simple PersistentVolumeClaim](#simple-persistentvolumeclaim)
-- [StatefulSet](#statefulset)
-- [StorageClass](#storageclass)
 
 ### Block Volume
 

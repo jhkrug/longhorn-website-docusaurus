@@ -1,18 +1,19 @@
 ---
 title: Volume Encryption
 sidebar_position: 2
+toc_max_heading_level: 4
 ---
 
 Longhorn supports encrypted volumes by utilizing the linux kernel module `dm_crypt` via `cryptsetup` for the encryption.
 Further we use the Kubernetes secret mechanism for key storage, which can be further encrypted and guarded via appropriate permissions.
 An encrypted volume results in your data being encrypted while in transit as well as at rest, this also means that any backups taken from that volume are also encrypted.
 
-# Requirements
+## Requirements
 
 To be able to use encrypted volumes, you will need to have the `dm_crypt` kernel module loaded
 and `cryptsetup` installed on your worker nodes.
 
-# Setting up Kubernetes Secrets
+## Setting up Kubernetes Secrets
 Volume encryption utilizes Kubernetes secrets for encryption key storage.
 To configure the secret that will be used for an encrypted volume, you will need to specify the secret as part of the parameters of a storage class.
 This mechanism is provided by Kubernetes and allows the usage of some template parameters that will be resolved as part of volume creation.
@@ -90,7 +91,7 @@ parameters:
   csi.storage.k8s.io/node-stage-secret-namespace: ${pvc.namespace}
 ```
 
-# Using an encrypted volume
+## Using an encrypted volume
 
 To create an encrypted volume, you just create a PVC utilizing a storage class that has been configured for encryption.
 The above storage class examples can be used as a starting point.
@@ -99,9 +100,9 @@ After creation of the PVC it will remain in `Pending` state till the associated 
 by the csi `external-provisioner` sidecar. Afterwards the regular volume creation flow will take over and the encryption will be
 transparently used so no additional actions are needed from the user.
 
-# Filesystem expansion
+## Filesystem expansion
 
 Longhorn supports offline [expansion](../../volumes-and-nodes/expansion) for encrypted volumes.
 
-# History
+## History
 Available since v1.2.0 [#1859](https://github.com/longhorn/longhorn/issues/1859)

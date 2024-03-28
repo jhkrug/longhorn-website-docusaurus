@@ -5,10 +5,12 @@ hide_table_of_contents: true
 <header class="hero hero--primary heroBanner_src-pages-index-module">
 <div class="container">
 <h1 class="hero__title" align="center">Longhorn</h1>
-<p align="center" class="hero__subtitle">Longhorn — the lightweight, reliable, and powerful distributed block storage system for Kubernetes.</p>
+<p align="center" class="hero__subtitle">Longhorn — lightweight, reliable, and powerful distributed block storage for Kubernetes</p>
 <p align="center" class="hero__subtitle">Easy to use, 100% open source, run anywhere</p>
 <div class="buttons_src-pages-index-module">
-</div></div></header>
+</div>
+</div>
+</header>
 
 <br/>
 
@@ -48,10 +50,16 @@ hide_table_of_contents: true
    If your main cluster fails, you can bring up your application in the DR cluster
    quickly, with a defined RPO and RTO.
 
-#### Originally developed by
-
+<br/>
+<table>
+<tr>
+<td>
+**Originally developed by**<br/>
 ![Rancher logo](/img/rancher-logo-color.svg)
-
-#### Longhorn is now a CNCF Incubating project
-
+</td>
+<td>
+**Longhorn is now a CNCF Incubating project**<br/>
 ![CNCF logo](/img/cncf-logo-color.svg)
+</td>
+</tr>
+</table>

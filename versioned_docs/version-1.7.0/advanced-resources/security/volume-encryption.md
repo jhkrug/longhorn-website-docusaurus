@@ -1,17 +1,18 @@
 ---
 title: Volume Encryption
 sidebar_position: 2
+toc_max_heading_level: 4
 ---
 
 Longhorn supports volume encryption in both `Filesystem` and `Block` modes, providing protection against unauthorized access, data breaches, and compliance violations. Backups created from encrypted volumes are also encrypted.
 
 Volume encryption is made possible by the Linux kernel module `dm_crypt`, the command-line utility `cryptsetup`, and Kubernetes Secrets. `dm_crypt` and `cryptsetup` handle the creation and management of encrypted devices, while Secrets (and related permissions) facilitate secure storage of encryption keys.
 
-# Requirements
+## Requirements
 
 To use encrypted volumes, ensure that the `dm_crypt` kernel module is loaded and that `cryptsetup` is installed on your worker nodes.
 
-# Setting up Kubernetes Secrets and StorageClasses
+## Setting up Kubernetes Secrets and StorageClasses
 
 Longhorn uses Kubernetes Secrets for secure storage of encryption keys. Kubernetes allows usage of template parameters that are resolved during volume creation. To use a Secret with an encrypted volume, you must configure the Secret as a StorageClass parameter.
 
@@ -87,18 +88,18 @@ For more information, see [cryptsetup(8)](https://man7.org/linux/man-pages/man8/
     csi.storage.k8s.io/node-stage-secret-namespace: ${pvc.namespace}
   ```
 
-# Using an Encrypted Volume
+## Using an Encrypted Volume
 
 To create an encrypted volume, you must create a PVC using a StorageClass that has been configured for encryption. The above StorageClass examples can be used as a starting point.
 
 After creation of the PVC it will remain in `Pending` state till the associated secret has been created and can be retrieved
 A newly-created PVC remains in the `Pending` state until the associated Secret is created and can be retrieved by the csi `external-provisioner` sidecar. Afterwards, the regular volume creation process continues with encryption taking effect.
 
-# Filesystem Expansion
+## Filesystem Expansion
 
 Longhorn supports [offline expansion](../../nodes-and-volumes/volumes/expansion#encrypted-volume) for encrypted volumes.
 
-# History
+## History
 - Encryption of volumes in `Filesystem` mode available starting v1.2.0 ([#1859](https://github.com/longhorn/longhorn/issues/1859))
 
 - Encryption of volumes in `Block` mode available starting v1.6.0 ([#4883](https://github.com/longhorn/longhorn/issues/4883))

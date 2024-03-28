@@ -1,6 +1,7 @@
 ---
 title: Taints and Tolerations
 sidebar_position: 3
+toc_max_heading_level: 4
 ---
 
 If users want to create nodes with large storage spaces and/or CPU resources for Longhorn only (to store replica data) and reject other general workloads, they can taint those nodes and add tolerations for Longhorn components. Then Longhorn can be deployed on those nodes.
@@ -9,11 +10,11 @@ Notice that the taint tolerations setting for one workload will not prevent it f
 
 For more information about how taints and tolerations work, refer to the [official Kubernetes documentation.](https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/)
 
-# Setting up Taints and Tolerations
+## Setting up Taints and Tolerations
 Longhorn system contains user deployed components (e.g, Manager, Driver Deployer, UI) and system managed components (e.g, Instance Manager, Engine Image, CSI Driver, etc.)
 You need to set tolerations for both types of components. See more details below.
 
-### Setting up Taints and Tolerations During installing Longhorn
+#### Setting up Taints and Tolerations During installing Longhorn
 1. Set taint tolerations for user deployed components (Manager, UI, Driver Deployer)
    * If you install Longhorn by Rancher 2.5.x, you need to click `Edit as YAML` in Rancher UI and copy this values into the YAML:
      ```yaml
@@ -53,7 +54,7 @@ You need to set tolerations for both types of components. See more details below
    >   taintToleration: "key=value:NoSchedule"
    >  ```
 
-### Setting up Taints and Tolerations After Longhorn has been installed
+#### Setting up Taints and Tolerations After Longhorn has been installed
 
 > **Warning**:
 >
@@ -100,7 +101,7 @@ You need to set tolerations for both types of components. See more details below
    The taint toleration setting can be found at Longhorn UI under **Setting > General > Kubernetes Taint Toleration.**
 
 
-## History
+### History
 Available since v0.6.0
 * [Original feature request](https://github.com/longhorn/longhorn/issues/584)
 * [Resolve the problem with GitOps](https://github.com/longhorn/longhorn/issues/2120)

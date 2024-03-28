@@ -5,20 +5,6 @@ sidebar_position: 30
 
 This section describes how to handle planned node maintenance or upgrading Kubernetes version for the cluster.
 
-- [Updating the Node OS or Container Runtime](#updating-the-node-os-or-container-runtime)
-- [Removing a Disk](#removing-a-disk)
-  - [Reusing the Node Name](#reusing-the-node-name)
-- [Removing a Node](#removing-a-node)
-- [Upgrading Kubernetes](#upgrading-kubernetes)
-  - [In-place Upgrade](#in-place-upgrade)
-  - [Managed Kubernetes](#managed-kubernetes)
-- [Node Drain Policy Recommendations](#node-drain-policy-recommendations)
-  - [Important Notes](#important-notes)
-  - [Block If Contains Last Replica](#block-if-contains-last-replica)
-  - [Allow If Last Replica Is Stopped](#allow-if-last-replica-is-stopped)
-  - [Always Allow](#always-allow)
-  - [Block For Eviction](#block-for-eviction)
-  - [Block For Eviction If Contains Last Replica](#block-for-eviction-if-contains-last-replica)
 
 ## Updating the Node OS or Container Runtime
 

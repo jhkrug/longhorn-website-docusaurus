@@ -4,22 +4,6 @@ sidebar_position: 3
 ---
 
 **Table of Contents**
-- [Prerequisites](#prerequisites)
-  - [Configure Kernel Modules and Huge Pages](#configure-kernel-modules-and-huge-pages)
-  - [Install NVMe Userspace Tool and Load `nvme-tcp` Kernel Module](#install-nvme-userspace-tool-and-load-nvme-tcp-kernel-module)
-  - [Load Kernel Modules Automatically on Boot](#load-kernel-modules-automatically-on-boot)
-  - [Restart `kubelet`](#restart-kubelet)
-  - [Check Environment](#check-environment)
-- [Installation](#installation)
-  - [Install Longhorn System](#install-longhorn-system)
-  - [Enable V2 Data Engine](#enable-v2-data-engine)
-  - [CPU and Memory Usage](#cpu-and-memory-usage)
-  - [Add `block-type` Disks in Longhorn Nodes](#add-block-type-disks-in-longhorn-nodes)
-    - [Prepare disks](#prepare-disks)
-    - [Add disks to `node.longhorn.io`](#add-disks-to-nodelonghornio)
-- [Application Deployment](#application-deployment)
-  - [Create a StorageClass](#create-a-storageclass)
-  - [Create Longhorn Volumes](#create-longhorn-volumes)
 
 ---
 
@@ -145,9 +129,6 @@ Or, you can manually install them.
 Rather than manually loading kernel modules `uio`, `uio_pci_generic` and `nvme-tcp` each time after reboot, you can streamline the process by configuring automatic module loading during the boot sequence. For detailed instructions, please consult the manual provided by your operating system.
 
 Reference:
-- [SUSE/OpenSUSE: Loading kernel modules automatically on boot](https://documentation.suse.com/sles/15-SP4/html/SLES-all/cha-mod.html#sec-mod-modprobe-d)
-- [Ubuntu: Configure kernel modules to load at boot](https://manpages.ubuntu.com/manpages/jammy/man5/modules-load.d.5.html)
-- [RHEL: Loading kernel modules automatically at system boot time](https://access.redhat.com/documentation/zh-tw/red_hat_enterprise_linux/8/html/managing_monitoring_and_updating_the_kernel/managing-kernel-modules_managing-monitoring-and-updating-the-kernel)
 
 ### Restart `kubelet`
 

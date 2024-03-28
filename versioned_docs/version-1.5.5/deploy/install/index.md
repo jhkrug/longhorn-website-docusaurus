@@ -1,6 +1,7 @@
 ---
 title: Quick Installation
 description: Install Longhorn on Kubernetes
+toc_max_heading_level: 4
 sidebar_position: 1
 ---
 
@@ -19,7 +20,7 @@ For information on customizing Longhorn's default settings, refer to [this secti
 
 For information on deploying Longhorn on specific nodes and rejecting general workloads for those nodes, refer to the section on [taints and tolerations.](../../advanced-resources/deploy/taint-toleration)
 
-# Installation Requirements
+## Installation Requirements
 
 Each node in the Kubernetes cluster where Longhorn is installed must fulfill the following requirements:
 
@@ -40,13 +41,13 @@ The Longhorn workloads must be able to run as root in order for Longhorn to be d
 
 For the minimum recommended hardware, refer to the [best practices guide.](../../best-practices#minimum-recommended-hardware)
 
-### OS/Distro Specific Configuration
+#### OS/Distro Specific Configuration
 
 - **Google Kubernetes Engine (GKE)** requires some additional setup for Longhorn to function properly. If you're a GKE user, refer to [this section](../../advanced-resources/os-distro-specific/csi-on-gke) for details.
 - **K3s clusters** require some extra setup. Refer to [this section](../../advanced-resources/os-distro-specific/csi-on-k3s)
 - **RKE clusters with CoreOS** need [this configuration.](../../advanced-resources/os-distro-specific/csi-on-rke-and-coreos)
 
-### Using the Environment Check Script
+#### Using the Environment Check Script
 
 We've written a script to help you gather enough information about the factors.
 
@@ -75,19 +76,19 @@ Example result:
 [INFO]  Cleanup completed.
 ```
 
-### Pod Security Policy
+#### Pod Security Policy
 
 Starting with v1.0.2, Longhorn is shipped with a default Pod Security Policy that will give Longhorn the necessary privileges to be able to run properly.
 
 No special configuration is needed for Longhorn to work properly on clusters with Pod Security Policy enabled.
 
-### Notes on Mount Propagation
+#### Notes on Mount Propagation
 
 If your Kubernetes cluster was provisioned by Rancher v2.0.7+ or later, the MountPropagation feature is enabled by default.
 
 If MountPropagation is disabled, Base Image feature will be disabled.
 
-### Root and Privileged Permission
+#### Root and Privileged Permission
 
 Longhorn components require root access with privileged permissions to achieve volume operations and management, because Longhorn relies on system resources on the host across different namespaces, for example, Longhorn uses `nsenter` to understand block devices' usage or encrypt/decrypt volumes on the host.
 
@@ -126,7 +127,7 @@ Below are the directories Longhorn components requiring access with root and pri
 - Longhorn System Restore Rollout
   - /var/lib/longhorn/engine-binaries: The default path for storing the Longhorn engine binaries.
 
-### Installing open-iscsi
+#### Installing open-iscsi
 
 The command used to install `open-iscsi` differs depending on the Linux distribution.
 
@@ -190,7 +191,7 @@ In rare cases, it may be required to modify the installed SELinux policy to get 
 an up-to-date version of a Fedora downstream distribution (e.g. Fedora, RHEL, Rocky, CentOS, etc.) and plan to leave
 SELinux enabled, see [the KB](/kb/troubleshooting-volume-attachment-fails-due-to-selinux-denials) for details.
 
-### Installing NFSv4 client
+#### Installing NFSv4 client
 
 In Longhorn system, backup feature requires NFSv4, v4.1 or v4.2, and ReadWriteMany (RWX) volume feature requires NFSv4.1. Before installing NFSv4 client userspace daemon and utilities, make sure the client kernel support is enabled on each Longhorn node.
 
@@ -240,7 +241,7 @@ kubectl logs longhorn-nfs-installation-t2v9v -c nfs-installation
 nfs install successfully
 ```
 
-### Checking the Kubernetes Version
+#### Checking the Kubernetes Version
 
 Use the following command to check your Kubernetes server version
 

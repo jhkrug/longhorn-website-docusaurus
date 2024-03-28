@@ -1,6 +1,7 @@
 ---
 title: Taints and Tolerations
 sidebar_position: 3
+toc_max_heading_level: 4
 ---
 
 If users want to create nodes with large storage spaces and/or CPU resources for Longhorn only (to store replica data) and reject other general workloads, they can taint those nodes and add tolerations for Longhorn components. Then Longhorn can be deployed on those nodes.
@@ -9,19 +10,19 @@ Notice that the taint tolerations setting for one workload will not prevent it f
 
 For more information about how taints and tolerations work, refer to the [official Kubernetes documentation.](https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/)
 
-# Setting up Taints and Tolerations
+## Setting up Taints and Tolerations
 
-### During installing Longhorn
+#### During installing Longhorn
 
 Follow the instructions to set init taint tolerations: [Customize default settings](./customizing-default-settings/)
 
-### After Longhorn has been installed
+#### After Longhorn has been installed
 
 The taint toleration setting can be found at Longhorn UI under **Setting > General > Kubernetes Taint Toleration.**
 
 Users can modify the existing tolerations or add more tolerations here, but noted that it will result in all the Longhorn system components to be recreated.
 
-# Usage
+## Usage
 
 Before modifying the toleration settings, users should make sure all Longhorn volumes are `detached`.
 
@@ -33,7 +34,7 @@ When tolerations are set, the substring `kubernetes.io` shouldn't be contained i
 
 Multiple tolerations can be set here, and these tolerations are separated by the semicolon. For example: `key1=value1:NoSchedule; key2:NoExecute`.
 
-## History
+### History
 [Original feature request](https://github.com/longhorn/longhorn/issues/584)
 
 Available since v0.6.0

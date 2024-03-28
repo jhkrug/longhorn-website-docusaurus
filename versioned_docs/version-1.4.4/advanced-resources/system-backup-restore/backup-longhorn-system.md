@@ -3,15 +3,6 @@ title: Backup Longhorn System
 sidebar_position: 1
 ---
 
-- [What is in the Longhorn system backup bundle](#longhorn-system-backup-bundle)
-- [How to create a Longhorn system backup](#create-longhorn-system-backup)
-    - [Prerequisite](#prerequisite)
-    - [Using Longhorn UI](#using-longhorn-ui)
-    - [Using kubectl command](#using-kubectl-command)
-- [How to delete Longhorn system backup](#delete-longhorn-system-backup)
-    - [Using Longhorn UI](#using-longhorn-ui-1)
-    - [Using kubectl command](#using-kubectl-command-1)
-- [History](#history)
 
 ## Longhorn System Backup Bundle
 

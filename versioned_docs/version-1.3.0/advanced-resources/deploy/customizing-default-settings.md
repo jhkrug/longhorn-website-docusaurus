@@ -7,20 +7,6 @@ You may customize Longhorn's default settings while installing or upgrading. You
 
 The default settings can be customized in the following ways:
 
-- [Installation](#installation)
-  - [Using the Rancher UI](#using-the-rancher-ui)
-  - [Using the Longhorn Deployment YAML File](#using-the-longhorn-deployment-yaml-file)
-  - [Using Helm](#using-helm)
-- [Update Settings](#update-settings)
-  - [Using the Longhorn UI](#using-the-longhorn-ui)
-  - [Using the Rancher UI](#using-the-rancher-ui-1)
-  - [Using Kubectl](#using-kubectl)
-  - [Using Helm](#using-helm-1)
-- [Upgrade](#upgrade)
-  - [Using the Rancher UI](#using-the-rancher-ui-2)
-  - [Using the Longhorn Deployment YAML File](#using-the-longhorn-deployment-yaml-file-1)
-  - [Using Helm](#using-helm-2)
-- [History](#history)
 
 
 > **NOTE:** When using Longhorn Deployment YAML file or Helm for installation, updating or upgrading, if the value of a default setting is an empty string and valid, the default setting will be cleaned up in Longhorn. If not, Longhorn will ignore the invalid values and will not update the default values.

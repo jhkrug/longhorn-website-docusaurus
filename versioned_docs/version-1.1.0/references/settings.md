@@ -3,51 +3,10 @@ title: Settings Reference
 sidebar_position: 1
 ---
 
-- [Customizing Default Settings](#customizing-default-settings)
 
-- [General](#general)
-  - [Create Default Disk on Labeled Nodes](#create-default-disk-on-labeled-nodes)
-  - [Default Data Path](#default-data-path)
-  - [Default Engine Image](#default-engine-image)
-  - [Default Instance Manager Image](#default-instance-manager-image)
-  - [Enable Upgrade Checker](#enable-upgrade-checker)
-  - [Latest Longhorn Version](#latest-longhorn-version)
-  - [Default Replica Count](#default-replica-count)
-  - [Default Data Locality](#default-data-locality)
-  - [Default Longhorn Static StorageClass Name](#default-longhorn-static-storageclass-name)
-  - [Custom Resource API Version](#custom-resource-api-version)
-  - [Automatic Salvage](#automatic-salvage)
-  - [Automatically Delete Workload Pod when The Volume Is Detached Unexpectedly](#automatically-delete-workload-pod-when-the-volume-is-detached-unexpectedly)
-  - [Registry Secret](#registry-secret)
-  - [Volume Attachment Recovery Policy](#volume-attachment-recovery-policy)
-  - [Pod Deletion Policy When Node is Down](#pod-deletion-policy-when-node-is-down)
-  - [Custom mkfs.ext4 parameters](#custom-mkfsext4-parameters)
-  - [Disable Revision Counter](#disable-revision-counter)
-  - [System Pods Image Pull Policy](#system-pods-image-pull-policy)
-  - [Auto Cleanup system Generated Snapshot](#auto-cleanup-system-generated-snapshot)
-  - [Allow Node Drain with the Last Healthy Replica](#allow-node-drain-with-the-last-healthy-replica)
-  - [Replica Replenishment Wait Interval](#replica-replenishment-wait-interval)
-  - [System Managed Pod Image Pull Policy](#system-managed-pod-image-pull-policy)
 
-- [Backups](#backups)
-  - [Backup Target](#backup-target)
-  - [Backup Target Credential Secret](#backup-target-credential-secret)
-  - [Backupstore Poll Interval](#backupstore-poll-interval)
-  - [Allow Recurring Job While Volume Is Detached](#allow-recurring-job-while-volume-is-detached)
 
-- [Scheduling](#scheduling)
-  - [Replica Node Level Soft Anti-Affinity](#replica-node-level-soft-anti-affinity)
-  - [Storage Over Provisioning Percentage](#storage-over-provisioning-percentage)
-  - [Storage Minimal Available Percentage](#storage-minimal-available-percentage)
-  - [Disable Scheduling On Cordoned Node](#disable-scheduling-on-cordoned-node)
-  - [Replica Zone Level Soft Anti-Affinity](#replica-zone-level-soft-anti-affinity)
-  - [Allow Volume Creation with Degraded Availability](#allow-volume-creation-with-degraded-availability)
 
-- [Danger Zone](#danger-zone)
-  - [Kubernetes Taint Toleration](#kubernetes-taint-toleration)
-  - [Guaranteed Engine CPU](#guaranteed-engine-cpu)
-  - [Priority Class](#priority-class)
-  - [Disable Replica Rebuild](#disable-replica-rebuild)
 
 ### Customizing Default Settings
 

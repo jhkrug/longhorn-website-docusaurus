@@ -1,20 +1,21 @@
 ---
 title: MTLS Support
 sidebar_position: 6
+toc_max_heading_level: 4
 ---
 
 Longhorn supports MTLS to secure and encrypt the grpc communication between the control plane (longhorn-manager) and the data plane (instance-managers).
 For Certificate setup we use the Kubernetes secret mechanism in combination with an optional secret mount for the longhorn-manager/instance-manager.
 
 
-# Requirements
+## Requirements
 In a default installation mtls is disabled to enable mtls support one needs to create a `longhorn-grpc-tls` secret in the `longhorn-system` namespace before deployment.
 The secret is specified as an optional secret mount for the longhorn-manager/instance-managers so if it does not exist when these
 components are started, mtls will not be used and a restart of the components will be required to enable tls support.
 
 The longhorn-manager has a non tls client fallback for mixed mode setups where there are old instance-managers that were started without tls support.
 
-# Self Signed Certificate Setup
+## Self Signed Certificate Setup
 
 You should create a `ca.crt` with the CA flag set which is then used to sign the `tls.crt` this will allow you to rotate the `tls.crt` in the future without service interruptions.
 You can use [openssl](https://mariadb.com/docs/security/data-in-transit-encryption/create-self-signed-certificates-keys-openssl/)
@@ -26,7 +27,7 @@ Common Name: longhorn-backend
 Subject Alternative Names: longhorn-backend, longhorn-backend.longhorn-system, longhorn-backend.longhorn-system.svc, longhorn-frontend, longhorn-frontend.longhorn-system, longhorn-frontend.longhorn-system.svc, longhorn-engine-manager, longhorn-engine-manager.longhorn-system, longhorn-engine-manager.longhorn-system.svc, longhorn-replica-manager, longhorn-replica-manager.longhorn-system, longhorn-replica-manager.longhorn-system.svc, longhorn-csi, longhorn-csi.longhorn-system, longhorn-csi.longhorn-system.svc, longhorn-backend, IP Address:127.0.0.1
 ```
 
-# Setting up Kubernetes Secrets
+## Setting up Kubernetes Secrets
 
 The `ca.crt` is the certificate of the certificate authority that was used to sign
 the `tls.crt` which will be used both by the client (longhorn-manager) and the server (instance-manager) for grpc mtls authentication.
@@ -55,5 +56,5 @@ For more information on creating a secret, see [the Kubernetes documentation.](h
 > which will cause an error during loading of the certificates.
 
 
-# History
+## History
 Available since v1.3.0 [#3839](https://github.com/longhorn/longhorn/issues/3839)

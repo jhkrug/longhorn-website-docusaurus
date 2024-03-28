@@ -6,11 +6,6 @@ sidebar_position: 6
 In this section, you'll learn how to uninstall Longhorn.
 
 
-- [Prerequisite](#prerequisite)
-- [Uninstalling Longhorn from the Rancher UI](#uninstalling-longhorn-from-the-rancher-ui)
-- [Uninstalling Longhorn using Helm](#uninstalling-longhorn-using-helm)
-- [Uninstalling Longhorn using kubectl](#uninstalling-longhorn-using-kubectl)
-- [Troubleshooting](#troubleshooting)
 
 ### Prerequisite
 To prevent Longhorn from being accidentally uninstalled (which leads to data lost),
