@@ -1,4 +1,5 @@
 {
+  "variable_name": "variable_value",
   "foo": "bar",
   "bob": "alice",
   "lorem": "ipsum",
