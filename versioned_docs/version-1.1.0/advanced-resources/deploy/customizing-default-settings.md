@@ -9,9 +9,6 @@ This default setting is only for a Longhorn system that hasn't been deployed. It
 
 The default settings can be customized in the following ways:
 
-- [Using the Rancher UI](#using-the-rancher-ui)
-- [Using the Longhorn Deployment YAML File](#using-the-longhorn-deployment-yaml-file)
-- [Using Helm](#using-helm)
 
 ### Using the Rancher UI
 

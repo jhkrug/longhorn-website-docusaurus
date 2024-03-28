@@ -3,20 +3,6 @@ title: Restore Longhorn System
 sidebar_position: 2
 ---
 
-- [What does the Longhorn system restore rollout to the cluster](#longhorn-system-restore-rollouts)
-- [What are the limitations](#limitations)
-    - [Restore Path](#restore-path)
-- [How to restore from Longhorn system backup](#create-longhorn-system-restore)
-    - [Prerequisite](#prerequisite)
-    - [Using Longhorn UI](#using-longhorn-ui)
-    - [Using kubectl command](#using-kubectl-command)
-- [How to delete Longhorn system restore](#delete-longhorn-system-restore)
-    - [Using Longhorn UI](#using-longhorn-ui-1)
-    - [Using kubectl command](#using-kubectl-command-1)
-- [How to restart Longhorn System Restore](#restart-longhorn-system-restore)
-- [What settings are configurable](#configurable-settings)
-- [How to troubleshoot](#troubleshoot)
-- [History](#history)
 
 ## Longhorn System Restore Rollouts
 
@@ -112,10 +98,6 @@ You can abort or remove a completed Longhorn system restore using Longhorn UI. O
 ## Configurable Settings
 
 Some settings are excluded as configurable before the Longhorn system restore.
-- [Concurrent volume backup restore per node limit](../../references/settings#concurrent-volume-backup-restore-per-node-limit)
-- [Concurrent replica rebuild per node limit](../../references/settings#concurrent-replica-rebuild-per-node-limit)
-- [Backup Target](../../references/settings#backup-target)
-- [Backup Target Credential Secret](../../references/settings#backup-target-credential-secret)
 
 ## Troubleshoot
 

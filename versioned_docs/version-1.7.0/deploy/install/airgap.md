@@ -5,11 +5,6 @@ sidebar_position: 100
 
 Longhorn can be installed in an air gapped environment by using a manifest file, a Helm chart, or the Rancher UI.
 
-- [Requirements](#requirements)
-- [Using a Manifest File](#using-a-manifest-file)
-- [Using a Helm chart](#using-a-helm-chart)
-- [Using a Rancher app](#using-a-rancher-app)
-- [Troubleshooting](#troubleshooting)
 
 ## Requirements
   - Deploy Longhorn Components images to your own registry.

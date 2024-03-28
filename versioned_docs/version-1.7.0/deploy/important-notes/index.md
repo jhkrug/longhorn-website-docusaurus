@@ -6,22 +6,6 @@ sidebar_position: 4
 This page lists important notes for Longhorn v[[< current-version >]].
 Please see [here](https://github.com/longhorn/longhorn/releases/tag/v[[< current-version >]]) for the full release note.
 
-- [General](#general)
-  - [Supported Kubernetes Versions](#supported-kubernetes-versions)
-  - [Offline Upgrade Required To Fully Prevent Unexpected Replica Expansion](#offline-upgrade-required-to-fully-prevent-unexpected-replica-expansion)
-  - [Default Priority Class](#default-priority-class)
-  - [New Node Drain Policies Added](#new-node-drain-policies-added)
-  - [Custom Resource Fields Deprecated](#custom-resource-fields-deprecated)
-  - [Pod Security Policies Disabled \& Pod Security Admission Introduction](#pod-security-policies-disabled--pod-security-admission-introduction)
-  - [Updating CSI Snapshot CRD `v1beta1` to `v1`, `v1beta1` Removed](#updating-csi-snapshot-crd-v1beta1-to-v1-v1beta1-removed)
-  - [Engine Upgrade Enforcement](#engine-upgrade-enforcement)
-  - [Danger Zone Setting Configuration](#danger-zone-setting-configuration)
-- [V2 Data Engine](#v2-data-engine)
-  - [Longhorn System Upgrade](#longhorn-system-upgrade)
-  - [Changing Default Huge Page Size to 2 GiB](#changing-default-huge-page-size-to-2-gib)
-  - [Support for ARM64 Platform](#support-for-arm64-platform)
-  - [Replacing `backendStoreDriver` with `dataEngine`](#replacing-backendstoredriver-with-dataengine)
-  - [Updating the Linux Kernel on Longhorn Nodes](#updating-the-linux-kernel-on-longhorn-nodes)
 
 ## General
 

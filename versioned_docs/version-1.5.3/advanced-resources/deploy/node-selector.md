@@ -1,6 +1,7 @@
 ---
 title: Node Selector
 sidebar_position: 4
+toc_max_heading_level: 4
 ---
 
 If you want to restrict Longhorn components to only run on a particular set of nodes, you can set node selector for all Longhorn components.
@@ -9,11 +10,11 @@ In this case, you can set the node selector to restrict Longhorn to only run on 
 
 For more information about how node selector work, refer to the [official Kubernetes documentation.](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node#nodeselector)
 
-# Setting up Node Selector for Longhorn
+## Setting up Node Selector for Longhorn
 Longhorn system contains user deployed components (e.g, Manager, Driver Deployer, UI) and system managed components (e.g, Instance Manager, Engine Image, CSI Driver, etc.)
 You need to set node selector for both types of components. See more details below.
 
-### Setting up Node Selector During installing Longhorn
+#### Setting up Node Selector During installing Longhorn
 1. Set node selector for user deployed components (Manager, UI, Driver Deployer)
    * If you install Longhorn by Rancher 2.5.x, you need to click `Edit as YAML` in Rancher UI and copy this values into the YAML:
       ```yaml
@@ -44,7 +45,7 @@ You need to set node selector for both types of components. See more details bel
    >  ```
 
 
-### Setting up Node Selector After Longhorn has been installed
+#### Setting up Node Selector After Longhorn has been installed
 
 > **Warning**:
 > * Since all Longhorn components will be restarted, the Longhorn system is unavailable temporarily.
@@ -86,7 +87,7 @@ You need to set node selector for both types of components. See more details bel
    those nodes will become `down` state after this process. Verify that there is no replica left on those nodes.
    Disable scheduling for those nodes, and delete them in Longhorn UI
 
-## History
+### History
 Available since v1.1.1
 * [Original feature request](https://github.com/longhorn/longhorn/issues/2199)
 

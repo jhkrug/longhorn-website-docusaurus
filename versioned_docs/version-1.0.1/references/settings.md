@@ -3,39 +3,10 @@ title: Settings Reference
 sidebar_position: 1
 ---
 
-- [Customizing Default Settings](#customizing-default-settings)
 
-- [General](#general)
-  - [Create Default Disk on Labeled Nodes](#create-default-disk-on-labeled-nodes)
-  - [Default Data Path](#default-data-path)
-  - [Default Engine Image](#default-engine-image)
-  - [Default Instance Manager Image](#default-instance-manager-image)
-  - [Enable Upgrade Checker](#enable-upgrade-checker)
-  - [Latest Longhorn Version](#latest-longhorn-version)
-  - [Default Replica Count](#default-replica-count)
-  - [Default Longhorn Static StorageClass Name](#default-longhorn-static-storageclass-name)
-  - [Custom Resource API Version](#custom-resource-api-version)
-  - [Automatic Salvage](#automatic-salvage)
-  - [Registry Secret](#registry-secret)
-  - [Volume Attachment Recovery Policy](#volume-attachment-recovery-policy)
-  - [Custom mkfs.ext4 parameters](#custom-mkfsext4-parameters)
 
-- [Backups](#backups)
-  - [Backup Target](#backup-target)
-  - [Backup Target Credential Secret](#backup-target-credential-secret)
-  - [Backupstore Poll Interval](#backupstore-poll-interval)
 
-- [Scheduling](#scheduling)
-  - [Replica Node Level Soft Anti-Affinity](#replica-node-level-soft-anti-affinity)
-  - [Storage Over Provisioning Percentage](#storage-over-provisioning-percentage)
-  - [Storage Minimal Available Percentage](#storage-minimal-available-percentage)
-  - [Disable Scheduling On Cordoned Node](#disable-scheduling-on-cordoned-node)
-  - [Replica Zone Level Soft Anti-Affinity](#replica-zone-level-soft-anti-affinity)
 
-- [Danger Zone](#danger-zone)
-  - [Kubernetes Taint Toleration](#kubernetes-taint-toleration)
-  - [Guaranteed Engine CPU](#guaranteed-engine-cpu)
-  - [Priority Class](#priority-class)
 
 ### Customizing Default Settings
 

@@ -1,6 +1,7 @@
 ---
 title: Revision Counter
 sidebar_position: 7
+toc_max_heading_level: 4
 ---
 
 The revision counter is a strong mechanism that Longhorn uses to track each replica's updates.
@@ -15,13 +16,13 @@ By default, the revision counter is enabled.
 
 > **Note:** 'Salvage' is Longhorn trying to recover a volume in a faulted state. A volume is in a faulted state when the Longhorn Engine loses the connection to all the replicas, and all replicas are marked as being in an error state.
 
-# Disable Revision Counter
-## Using Longhorn UI
+## Disable Revision Counter
+### Using Longhorn UI
 To disable or enable the revision counter from the Longhorn UI, click **Setting > General > Disable Revision Counter.**
 
 To create individual volumes with settings that are customized against the general settings, go to the **Volume** page and click **Create Volume.**
 
-## Using a Manifest File
+### Using a Manifest File
 
 A `StorageClass` can be customized to add a `disableRevisionCounter` parameter.
 
@@ -43,7 +44,7 @@ parameters:
   fromBackup: ""
 ```
 
-## Auto-Salvage Support with Revision Counter Disabled
+### Auto-Salvage Support with Revision Counter Disabled
 The logic for auto-salvage is different when the revision counter is disabled.
 
 When revision counter is enabled and all the replicas in the volume are in the 'ERR' state, the engine controller will be in a faulted state, and for engine to recover the volume, it will get the replica with the largest revision counter as 'Source of Truth' to rebuild the rest replicas.

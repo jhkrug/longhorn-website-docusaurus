@@ -1,17 +1,18 @@
 ---
 title: Priority Class
 sidebar_position: 6
+toc_max_heading_level: 4
 ---
 The Priority Class setting can be used to set a higher priority on Longhorn workloads in the cluster, preventing them from being the first to be evicted during node pressure situations.
 
 For more information on how pod priority works, refer to the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/).
 
-# Setting Priority Class
+## Setting Priority Class
 
 Longhorn consists of user-deployed components (for example, Longhorn Manager, Longhorn Driver, and Longhorn UI) and system-managed components (for example, Instance Manager, CSI Driver, and Engine images).
 You need to set Priority Class for both types of components. See more details below.
 
-### Setting Priority Class During Longhorn Installation
+#### Setting Priority Class During Longhorn Installation
 
 Longhorn creates a Priority Class `longhorn-critical` and sets it as default for its user deployed or system managed components if the following actions are not taken.
 
@@ -22,7 +23,7 @@ Longhorn creates a Priority Class `longhorn-critical` and sets it as default for
 > You can see if this is the case by checking the status of the longhorn-manager DaemonSet with `kubectl -n longhorn-system describe daemonset.apps/longhorn-manager`.
 > You will need to uninstall Longhorn and restart the installation if this is the case.
 
-### Setting Priority Class After Longhorn Installation
+#### Setting Priority Class After Longhorn Installation
 
 1. Set taint Priority Class for system managed components: The Priority Class setting can be found in the Longhorn UI by clicking **Setting > General > Priority Class.**
 1. Set taint Priority Class for user deployed components: modify the Helm chart or deployment YAML file depending on how you deploy Longhorn.
@@ -30,7 +31,7 @@ Longhorn creates a Priority Class `longhorn-critical` and sets it as default for
 Users can update or remove the Priority Class here, but note that this will result in recreation of all the Longhorn system components.
 The Priority Class setting will reject values that appear to be invalid Priority Classes.
 
-# Usage
+## Usage
 
 To ensure that your preferred Priority Class settings are immediately applied, stop all workloads and detach all Longhorn volumes before configuring the settings.
 
@@ -42,7 +43,7 @@ When one or more Longhorn volumes are still attached, the customized setting is 
 
 Do not delete the Priority Class in use by Longhorn, as this can cause new Longhorn workloads to fail to come online.
 
-## History
+### History
 
 [Original Feature Request](https://github.com/longhorn/longhorn/issues/1487)
 

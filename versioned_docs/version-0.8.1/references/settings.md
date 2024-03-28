@@ -3,24 +3,6 @@ title: Settings Reference
 sidebar_position: 1
 ---
 
-- [Customizing Default Settings](#customizing-default-settings)
-- [General](#general)
-  - [Backup Target](#backup-target)
-  - [Backup Target Credential Secret](#backup-target-credential-secret)
-  - [Backupstore Poll Interval](#backupstore-poll-interval)
-  - [Create Default Disk on Labeled Nodes](#create-default-disk-on-labeled-nodes)
-  - [Default Data Path](#default-data-path)
-  - [Default Engine Image](#default-engine-image)
-  - [Enable Upgrade Checker](#enable-upgrade-checker)
-  - [Latest Longhorn Version](#latest-longhorn-version)
-  - [Default Replica Count](#default-replica-count)
-  - [Guaranteed Engine CPU (Experimental)](#guaranteed-engine-cpu-experimental)
-  - [Default Longhorn Static StorageClass Name](#default-longhorn-static-storageclass-name)
-  - [Kubernetes Taint Toleration](#kubernetes-taint-toleration)
-- [Scheduling](#scheduling)
-  - [Replica Soft Anti-Affinity](#replica-soft-anti-affinity)
-  - [Storage Over Provisioning Percentage](#storage-over-provisioning-percentage)
-  - [Storage Minimal Available Percentage](#storage-minimal-available-percentage)
 
 ### Customizing Default Settings
 
