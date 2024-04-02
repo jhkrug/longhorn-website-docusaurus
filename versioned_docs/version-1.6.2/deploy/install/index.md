@@ -13,8 +13,11 @@ Longhorn can be installed on a Kubernetes cluster in several ways:
 - [Rancher catalog app](./install-with-rancher)
 - [kubectl](./install-with-kubectl/)
 - [Helm](./install-with-helm/)
+- [Fleet](./install-with-fleet/)
+- [Flux](./install-with-flux/)
+- [ArgoCD](./install-with-argocd/)
 
-To install Longhorn in an air gapped environment, refer to [this section.](../../advanced-resources/deploy/airgap)
+To install Longhorn in an air gapped environment, refer to [this section.](./airgap)
 
 For information on customizing Longhorn's default settings, refer to [this section.](../../advanced-resources/deploy/customizing-default-settings)
 
@@ -43,9 +46,13 @@ For the minimum recommended hardware, refer to the [best practices guide.](../..
 
 #### OS/Distro Specific Configuration
 
-- **Google Kubernetes Engine (GKE)** requires some additional setup for Longhorn to function properly. If you're a GKE user, refer to [this section](../../advanced-resources/os-distro-specific/csi-on-gke) for details.
-- **K3s clusters** require some extra setup. Refer to [this section](../../advanced-resources/os-distro-specific/csi-on-k3s)
-- **RKE clusters with CoreOS** need [this configuration.](../../advanced-resources/os-distro-specific/csi-on-rke-and-coreos)
+You must perform additional setups before using Longhorn with certain operating systems and distributions.
+
+- Google Kubernetes Engine (GKE): See [Longhorn CSI on GKE](../../advanced-resources/os-distro-specific/csi-on-gke).
+- K3s clusters: See [Longhorn CSI on K3s](../../advanced-resources/os-distro-specific/csi-on-k3s).
+- RKE clusters with CoreOS: See [Longhorn CSI on RKE and CoreOS](../../advanced-resources/os-distro-specific/csi-on-rke-and-coreos).
+- OCP/OKD clusters: See [OKD Support](../../advanced-resources/os-distro-specific/okd-support).
+- Talos Linux clusters: See [Talos Linux Support](../../advanced-resources/os-distro-specific/talos-linux-support).
 
 #### Using the Environment Check Script
 
@@ -62,10 +69,16 @@ curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v[[< current-vers
 Example result:
 
 ```shell
-[INFO]  Required dependencies are installed.
+[INFO]  Required dependencies 'kubectl jq mktemp sort printf' are installed.
+[INFO]  All nodes have unique hostnames.
 [INFO]  Waiting for longhorn-environment-check pods to become ready (0/3)...
 [INFO]  All longhorn-environment-check pods are ready (3/3).
-[INFO]  Required packages are installed.
+[INFO]  MountPropagation is enabled
+[INFO]  Checking kernel release...
+[INFO]  Checking iscsid...
+[INFO]  Checking multipathd...
+[INFO]  Checking packages...
+[INFO]  Checking nfs client...
 [INFO]  Cleaning up longhorn-environment-check pods...
 [INFO]  Cleanup completed.
 ```
@@ -94,12 +107,10 @@ Below are the directories Longhorn components requiring access with root and pri
   - /var/lib/longhorn: The default path for storing volume data on a host.
 - Longhorn Engine Image
   - /var/lib/longhorn/engine-binaries: The default path for storing the Longhorn engine binaries.
-- Longhorn Instance Manager (Engine)
-  - /dev: Block devices created by Longhorn are under the `/dev` path.
-  - /proc: Find the recognized host process like container runtime, then use `nsenter` to manage iSCSI targets and initiators, also some file system operations like sync before snapshotting.
-  - /var/lib/longhorn/engine-binaries: The default path for storing the Longhorn engine binaries.
-- Longhorn Instance Manager (Replica)
+- Longhorn Instance Manager
   - /: Access any data path on this node and access Longhorn engine binaries.
+  - /dev: Block devices created by Longhorn are under the `/dev` path.
+  - /proc: Find the recognized host process like container runtime, then use `nsenter` to manage iSCSI targets and initiators, also some file system
 - Longhorn Share Manager
   - /dev: Block devices created by Longhorn are under the `/dev` path.
   - /lib/modules: Kernel modules required by `cryptsetup` for volume encryption.
@@ -131,26 +142,25 @@ For GKE, we recommend using Ubuntu as the guest OS image since it contains`open-
 
 You may need to edit the cluster security group to allow SSH access.
 
-For SUSE and openSUSE, use this command:
+- SUSE and openSUSE: Run the following command:
+  ```
+  zypper install open-iscsi
+  ```
 
-```
-zypper install open-iscsi
-```
+- Debian and Ubuntu: Run the following command:
+  ```
+  apt-get install open-iscsi
+  ```
 
-For Debian and Ubuntu, use this command:
+- RHEL, CentOS, and EKS *(EKS Kubernetes Worker AMI with AmazonLinux2 image)*: Run the following commands:
+  ```
+  yum --setopt=tsflags=noscripts install iscsi-initiator-utils
+  echo "InitiatorName=$(/sbin/iscsi-iname)" > /etc/iscsi/initiatorname.iscsi
+  systemctl enable iscsid
+  systemctl start iscsid
+  ```
 
-```
-apt-get install open-iscsi
-```
-
-For RHEL, CentOS, and EKS with EKS Kubernetes Worker AMI with AmazonLinux2 image, use below commands:
-
-```
-yum --setopt=tsflags=noscripts install iscsi-initiator-utils
-echo "InitiatorName=$(/sbin/iscsi-iname)" > /etc/iscsi/initiatorname.iscsi
-systemctl enable iscsid
-systemctl start iscsid
-```
+- Talos Linux: See [Talos Linux Support](../../advanced-resources/os-distro-specific/talos-linux-support).
 
 Please ensure iscsi_tcp module has been loaded before iscsid service starts. Generally, it should be automatically loaded along with the package installation.
 
@@ -185,7 +195,7 @@ iscsi install successfully
 
 In rare cases, it may be required to modify the installed SELinux policy to get Longhorn working. If you are running
 an up-to-date version of a Fedora downstream distribution (e.g. Fedora, RHEL, Rocky, CentOS, etc.) and plan to leave
-SELinux enabled, see [the KB](../../../../../kb/troubleshooting-volume-attachment-fails-due-to-selinux-denials) for details.
+SELinux enabled, see [the KB](/kb/troubleshooting-volume-attachment-fails-due-to-selinux-denials) for details.
 
 #### Installing NFSv4 client
 
@@ -219,6 +229,8 @@ The command used to install a NFSv4 client differs depending on the Linux distri
   zypper install nfs-client
   ```
 
+- For Talos Linux, [the NFS client is part of the `kubelet` image maintained by the Talos team](https://www.talos.dev/v1.6/kubernetes-guides/configuration/storage#nfs).
+
 We also provide an `nfs` installer to make it easier for users to install `nfs-client` automatically:
 ```
 kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/v[[< current-version >]]/deploy/prerequisite/longhorn-nfs-installation.yaml
@@ -248,10 +260,8 @@ kubectl version
 Result:
 
 ```shell
-Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.0", GitCommit:"cb303e613a121a29364f75cc67d3d580833a7479", GitTreeState:"clean", BuildDate:"2021-04-08T16:31:21Z", GoVersion:"go1.16.1", Compiler:"gc", Platform:"linux/amd64"}
-Server Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.0+k3s1", GitCommit:"2705431d9645d128441c578309574cd262285ae6", GitTreeState:"clean", BuildDate:"2021-04-26T21:45:52Z", GoVersion:"go1.16.2", Compiler:"gc", Platform:"linux/amd64"}
+Client Version: version.Info{Major:"1", Minor:"26", GitVersion:"v1.26.10", GitCommit:"b8609d4dd75c5d6fba4a5eaa63a5507cb39a6e99", GitTreeState:"clean", BuildDate:"2023-10-18T11:44:31Z", GoVersion:"go1.20.10", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"26", GitVersion:"v1.26.10+k3s2", GitCommit:"cb5cb5557f34e240e38c68a8c4ca2506c68b1d86", GitTreeState:"clean", BuildDate:"2023-11-08T03:21:46Z", GoVersion:"go1.20.10", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
 The `Server Version` should be ≥ v1.21.
-
-

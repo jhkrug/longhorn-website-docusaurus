@@ -56,14 +56,18 @@ const config = {
       ({
         docs: {
           includeCurrentVersion: false,
-          lastVersion: "1.6.0",
+          lastVersion: "1.6.1",
           versions: {
             "1.7.0": {
               label: "1.7.0-dev",
               banner: "none",
             },
+            "1.6.2": {
+              label: "1.6.2",
+              banner: "none",
+            },
             "1.6.1": {
-              label: "1.6.1-dev",
+              label: "1.6.1 (latest)",
               banner: "none",
             },
             "1.6.0": {
@@ -94,28 +98,24 @@ const config = {
               label: "1.5.0",
               banner: "none",
             },
-            "1.4.5": {
-              label: "1.4.5-dev",
-              banner: "none",
-            },
             "1.4.4": {
-              label: "1.4.4",
+              label: "1.4.4-archived",
               banner: "none",
             },
             "1.4.3": {
-              label: "1.4.3",
+              label: "1.4.3-archived",
               banner: "none",
             },
             "1.4.2": {
-              label: "1.4.2",
+              label: "1.4.2-archived",
               banner: "none",
             },
             "1.4.1": {
-              label: "1.4.1",
+              label: "1.4.1-archived",
               banner: "none",
             },
             "1.4.0": {
-              label: "1.4.0",
+              label: "1.4.0-archived",
               banner: "none",
             },
             "1.3.4": {
