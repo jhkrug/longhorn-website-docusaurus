@@ -2,7 +2,7 @@ function lhSubstituteCurrentVersion(fc, fp) {
   /* The regex extracts a version number in the 'vno' named capture group
    * that is being used as a part of the directory name.  The assumption is
    * that version numbers are '/version-n.n.n/' format. There must be at
-   * least one number.
+   * least one number following the 'version-'.
    *
    * Valid examples:
    *    /version-1/
@@ -15,7 +15,9 @@ function lhSubstituteCurrentVersion(fc, fp) {
    *    /version-1.2rc3/
    */
 
-  // cCV is the first entry in versions.json
+  /* cCV is the first entry in versions.json. versions.json is created and
+   * managed by Docusaurus when creating versioned_docs. */
+
   const cCV = String(require("../versions.json")[0]);
   const regex = /\/version-(?<vno>(?:\d{1,}\.{0,1})*)\//g;
   for (const match of fp.matchAll(regex)) {
