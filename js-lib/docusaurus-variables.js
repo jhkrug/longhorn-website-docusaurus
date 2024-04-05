@@ -1,5 +1,10 @@
 function dsVariableProcessor(fc) {
-  // A more general scheme for variable processing.
+
+  /* A more general scheme for variable processing. Get the variables from
+   * variables.json. Iterate over them, create a regex for each, use it to
+   * replace all instances in the file content, fc, returning fc when complete.
+   */
+
   const Variables = require("../variables.json");
   const keys = Object.keys(Variables);
   keys.forEach((key) => {
