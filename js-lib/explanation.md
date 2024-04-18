@@ -9,14 +9,14 @@ For images.
 
 I fixed this with scripts and regular expressions to map to:
 
-![the-alt-text](the-source-path)
+`![the-alt-text](the-source-path)`:was
 
 For the current version, depending on the path of the markdown file.
 
-{{< current-version >}}
+`{{< current-version >}}`
 
-In a file 'content/docs/1.3.0/example.md', the 'current-version' construct gets
-replaced with '1.3.0'.
+In a file `content/docs/1.3.0/example.md`, the `{{< current-version >}}`
+construct gets replaced with '1.3.0'.
 
 It occurs ±1800 times in the source, so a replacement solution for anyone
 working on the docs, wouldn't have to perform error-prone manual editing seemed
