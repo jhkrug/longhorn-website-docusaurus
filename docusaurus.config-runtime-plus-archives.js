@@ -304,15 +304,9 @@ const config = {
             position: "right",
           },
           {
-            type: "dropdown",
-            label: "Community",
+            href: "https://cloud-native.slack.com/messages/longhorn",
+            label: "Slack",
             position: "right",
-            items: [
-              {
-                label: "Slack",
-                href: "https://cloud-native.slack.com/messages/longhorn",
-              },
-            ],
           },
         ],
       },

@@ -52,11 +52,11 @@ quickly, with a defined RPO and RTO.
 <tr>
 <td>
 **Originally developed by**<br/>
-![Rancher logo](/img/rancher-logo-color.svg)
+![Rancher logo](/img/rancher-logo-color-white-bg.png)
 </td>
 <td>
 **Longhorn is a CNCF Incubating project**<br/>
-![CNCF logo](/img/cncf-logo-color.svg)
+![CNCF logo](/img/cncf-logo-color-white-bg.png)
 </td>
 </tr>
 </table>
