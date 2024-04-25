@@ -16,7 +16,7 @@
   --ifm-background-color: #fafafa;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-link-color: purple; /* to standout a bit more */
+  --ifm-link-color: #bb077d; /* to standout a bit more */
 }
 
 
@@ -34,3 +34,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-link-color: lightgreen; /* to standout a bit more */
 }
+
+/* html[data-theme='light'] footer { */
+/* 	--ifm-link-color: #90ebcd; */
+/* 	--ifm-link-hover-color: #90ebcd; */
+/* } */
