@@ -1,7 +1,7 @@
 ---
 title: CSI Volume Clone Support
 description: Creating a new volume as a duplicate of an existing volume
-sidebar_position: 3
+sidebar_position: 30
 ---
 
 Longhorn supports [CSI volume cloning](https://kubernetes.io/docs/concepts/storage/volume-pvc-datasource/).

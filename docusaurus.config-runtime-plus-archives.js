@@ -313,13 +313,13 @@ const config = {
       footer: {
         style: "dark",
         copyright: `© 2019-${new Date().getFullYear()} Longhorn authors |
-					Documentation distributed under CC-BT-4.0.<br/>
+					Documentation distributed under CC-BY-4.0.<br/>
 					© ${new Date().getFullYear()} The Linux Foundation. All rights
 					reserved. The Linux Foundation has registered trademarks and uses
 					trademarks.<br/>For a list of trademarks of the Linux Foundation
 					please see our
 					<a href="https://www.linuxfoundation.org/trademark-usage/">Trademark
-					Usage page</a>.`,
+					Usage</a> page.`,
       },
       prism: {
         theme: prismThemes.shadesOfPurple,

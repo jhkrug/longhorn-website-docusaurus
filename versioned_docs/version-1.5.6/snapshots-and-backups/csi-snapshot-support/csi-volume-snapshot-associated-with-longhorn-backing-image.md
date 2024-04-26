@@ -1,6 +1,6 @@
 ---
 title: CSI VolumeSnapshot Associated with Longhorn BackingImage
-sidebar_position: 2
+sidebar_position: 20
 ---
 
 BackingImage in Longhorn is an object that represents a QCOW2 or RAW image which can be set as the backing/base image of a Longhorn volume.

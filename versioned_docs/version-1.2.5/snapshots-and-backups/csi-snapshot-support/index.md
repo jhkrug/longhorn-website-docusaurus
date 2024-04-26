@@ -1,7 +1,7 @@
 ---
 title: CSI Snapshot Support
 description: Creating and Restoring Longhorn Backups via the kubernetes CSI snapshot mechanism
-sidebar_position: 3
+sidebar_position: 70
 ---
 
 ## History

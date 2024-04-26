@@ -1,6 +1,6 @@
 ---
 title: Recurring Snapshots and Backups
-sidebar_position: 3
+sidebar_position: 40
 ---
 
 From the Longhorn UI, recurring snapshots and backups can be scheduled.

@@ -1,6 +1,6 @@
 ---
 title: Backup and Restore
-sidebar_position: 2
+sidebar_position: 60
 ---
 
 > Before v1.2.0, Longhorn uses a blocking way for communication with the remote backup target, so there will be some potential voluntary or involuntary factors (ex: network latency) impacting the functions relying on remote backup target like listing backups or even causing further cascading problems after the backup target operation.

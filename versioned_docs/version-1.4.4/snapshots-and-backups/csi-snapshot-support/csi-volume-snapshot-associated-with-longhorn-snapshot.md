@@ -1,6 +1,6 @@
 ---
 title: CSI VolumeSnapshot Associated with Longhorn Snapshot
-sidebar_position: 2
+sidebar_position: 30
 ---
 
 Snapshot in Longhorn is an object that represents content of a Longhorn volume at a particular moment. It is stored inside the cluster.
