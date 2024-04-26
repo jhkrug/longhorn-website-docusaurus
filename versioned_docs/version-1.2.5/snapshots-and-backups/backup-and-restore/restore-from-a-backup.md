@@ -1,6 +1,6 @@
 ---
 title: Restore from a Backup
-sidebar_position: 3
+sidebar_position: 30
 ---
 
 Longhorn can easily restore backups to a volume. 

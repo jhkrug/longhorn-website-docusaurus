@@ -1,6 +1,6 @@
 ---
 title: Setting a Backup Target
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 A backup target is the endpoint used to access a backupstore in Longhorn. A backupstore is a NFS server or S3 compatible server that stores the backups of Longhorn volumes. The backup target can be set at `Settings/General/BackupTarget`.

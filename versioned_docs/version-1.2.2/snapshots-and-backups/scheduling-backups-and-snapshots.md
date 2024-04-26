@@ -1,6 +1,6 @@
 ---
 title: Recurring Snapshots and Backups
-sidebar_position: 3
+sidebar_position: 40
 ---
 
 From the Longhorn UI, the volume can refer to recurring snapshots and backups as independent jobs or as recurring job groups.

@@ -1,6 +1,6 @@
 ---
 title: CSI VolumeSnapshot Associated with Longhorn Backup
-sidebar_position: 3
+sidebar_position: 40
 ---
 
 Backups in Longhorn are objects in an off-cluster backupstore, and the endpoint to access the backupstore is the backup target. For more information, see [this section.](../../concepts#31-how-backups-work)

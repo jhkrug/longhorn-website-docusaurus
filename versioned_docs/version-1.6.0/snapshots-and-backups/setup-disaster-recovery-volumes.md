@@ -1,7 +1,7 @@
 ---
 title: Disaster Recovery Volumes
 description: Help and potential gotchas associated with specific cloud providers.
-sidebar_position: 4
+sidebar_position: 50
 ---
 
 A **disaster recovery (DR) volume** is a special volume that is mainly intended to store data in a backup cluster in case the whole main cluster goes down. Disaster recovery volumes are used to increase the resiliency of Longhorn volumes.

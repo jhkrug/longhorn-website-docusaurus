@@ -1,6 +1,6 @@
 ---
 title: Create a Backup
-sidebar_position: 2
+sidebar_position: 20
 ---
 
 Backups in Longhorn are objects in an off-cluster backupstore. A backup of a snapshot is copied to the backupstore, and the endpoint to access the backupstore is the backup target. For more information, see [this section.](../../concepts#31-how-backups-work)
