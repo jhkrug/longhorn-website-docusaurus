@@ -1,6 +1,6 @@
 ---
 title: Upgrade
-sidebar_position: 3
+sidebar_position: 50
 toc_max_heading_level: 4
 ---
 

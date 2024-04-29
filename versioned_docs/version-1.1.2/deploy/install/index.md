@@ -2,7 +2,7 @@
 title: Installation
 description: Install Longhorn on Kubernetes
 toc_max_heading_level: 4
-sidebar_position: 1
+sidebar_position: 20
 ---
 
 Longhorn can be installed on a Kubernetes cluster in several ways:

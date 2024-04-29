@@ -1,6 +1,6 @@
 ---
 title: Accessing the UI
-sidebar_position: 2
+sidebar_position: 30
 ---
 
 ## Prerequisites for Access and Authentication

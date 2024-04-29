@@ -1,6 +1,6 @@
 ---
 title: Important Notes
-sidebar_position: 4
+sidebar_position: 10
 ---
 
 This page lists important notes for Longhorn v1.2.1.

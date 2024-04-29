@@ -1,6 +1,6 @@
 ---
 title: Uninstall Longhorn
-sidebar_position: 6
+sidebar_position: 60
 ---
 
 In this section, you'll learn how to uninstall Longhorn.

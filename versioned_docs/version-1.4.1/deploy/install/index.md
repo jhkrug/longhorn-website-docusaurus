@@ -2,7 +2,7 @@
 title: Quick Installation
 description: Install Longhorn on Kubernetes
 toc_max_heading_level: 4
-sidebar_position: 1
+sidebar_position: 20
 ---
 
 > **Note**: This quick installation guide uses some configurations which are not for production usage.
