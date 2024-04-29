@@ -1,6 +1,6 @@
 ---
 title: Trim Filesystem
-sidebar_position: 7
+sidebar_position: 110
 ---
 
 Since v1.4.0, Longhorn supports trimming filesystem inside Longhorn volumes. Trimming will reclaim space wasted by the removed files of the filesystem.

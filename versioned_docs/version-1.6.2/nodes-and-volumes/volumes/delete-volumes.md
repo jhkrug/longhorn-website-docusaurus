@@ -1,6 +1,6 @@
 ---
 title: Delete Longhorn Volumes
-sidebar_position: 2
+sidebar_position: 40
 ---
 Once you are done utilizing a Longhorn volume for storage, there are a number of ways to delete the volume, depending on how you used the volume.
 

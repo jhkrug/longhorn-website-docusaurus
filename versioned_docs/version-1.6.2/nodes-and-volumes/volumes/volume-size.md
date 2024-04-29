@@ -1,6 +1,6 @@
 ---
 title: Volume Size
-sidebar_position: 4
+sidebar_position: 80
 ---
 
 In this section, you'll have a better understanding of concepts related to volume size.

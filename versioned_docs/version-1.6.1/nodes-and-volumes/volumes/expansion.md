@@ -1,6 +1,6 @@
 ---
 title: Volume Expansion
-sidebar_position: 6
+sidebar_position: 100
 ---
 
 Volumes are expanded in two stages. First, Longhorn resizes the block device, then it expands the filesystem.

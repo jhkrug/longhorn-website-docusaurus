@@ -1,6 +1,6 @@
 ---
 title: Viewing Workloads that Use a Volume
-sidebar_position: 5
+sidebar_position: 90
 ---
 
 Now users can identify current workloads or workload history for existing Longhorn persistent volumes (PVs) and their history of being bound to persistent volume claims (PVCs).

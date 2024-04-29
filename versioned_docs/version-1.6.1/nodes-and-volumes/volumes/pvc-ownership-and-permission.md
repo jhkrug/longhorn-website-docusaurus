@@ -1,6 +1,6 @@
 ---
 title: Longhorn PVC Ownership and Permission
-sidebar_position: 1
+sidebar_position: 30
 ---
 
 Kubernetes supports the 2 [volume modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes#volume-mode) for PVC: Filesystem and Block.

@@ -1,6 +1,6 @@
 ---
 title: Use Longhorn Volume as an iSCSI Target
-sidebar_position: 4
+sidebar_position: 70
 ---
 
 Longhorn supports iSCSI target frontend mode. You can connect to it

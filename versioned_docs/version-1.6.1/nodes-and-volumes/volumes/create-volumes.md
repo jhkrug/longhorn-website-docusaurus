@@ -1,6 +1,6 @@
 ---
 title: Create Longhorn Volumes
-sidebar_position: 1
+sidebar_position: 20
 ---
 
 In this tutorial, you'll learn how to create Kubernetes persistent storage resources of persistent volumes (PVs) and persistent volume claims (PVCs) that correspond to Longhorn volumes. You will use kubectl to dynamically provision storage for workloads using a Longhorn storage class. For help creating volumes from the Longhorn UI, refer to [this section.](#creating-longhorn-volumes-with-the-longhorn-ui)

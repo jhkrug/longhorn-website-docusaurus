@@ -1,6 +1,6 @@
 ---
 title: ReadWriteMany (RWX) Volume
-sidebar_position: 4
+sidebar_position: 60
 ---
 
 Longhorn supports ReadWriteMany (RWX) volumes by exposing regular Longhorn volumes via NFSv4 servers that reside in share-manager pods.
