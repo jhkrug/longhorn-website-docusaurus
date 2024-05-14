@@ -3,16 +3,7 @@ title: Troubleshooting Problems
 sidebar_position: 1
 ---
 
-- [Common issues](#common-issues)
-  - [Volume can be attached/detached from UI, but Kubernetes Pod/StatefulSet etc cannot use it](#volume-can-be-attacheddetached-from-ui-but-kubernetes-podstatefulset-etc-cannot-use-it)
-    - [Using with Flexvolume Plugin](#using-with-flexvolume-plugin)
-- [Troubleshooting Guide](#troubleshooting-guide)
-  - [UI](#ui)
-  - [Manager and Engines](#manager-and-engines)
-  - [CSI driver](#csi-driver)
-  - [Flexvolume Driver](#flexvolume-driver)
 
----
 
 > You can generate a support bundle file for offline troubleshooting. See [Support Bundle](./support-bundle) for detail.
 

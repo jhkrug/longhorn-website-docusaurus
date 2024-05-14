@@ -68,11 +68,15 @@ const config = {
               banner: "none",
             },
             "1.6.1": {
-              label: "1.6.1-latest",
+              label: "Docs 1.6.1-latest",
               banner: "none",
             },
             "1.6.0": {
               label: "1.6.0",
+              banner: "none",
+            },
+            "1.5.6": {
+              label: "1.5.6-dev",
               banner: "none",
             },
             "1.5.5": {
@@ -101,107 +105,107 @@ const config = {
             },
             "1.4.4": {
               label: "1.4.4-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.4.3": {
               label: "1.4.3-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.4.2": {
               label: "1.4.2-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.4.1": {
               label: "1.4.1-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.4.0": {
               label: "1.4.0-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.3.4": {
               label: "1.3.4-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.3.3": {
               label: "1.3.3-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.3.2": {
               label: "1.3.2-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.3.1": {
               label: "1.3.1-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.3.0": {
               label: "1.3.0-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.2.6": {
               label: "1.2.6-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.2.5": {
               label: "1.2.5-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.2.4": {
               label: "1.2.4-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.2.3": {
               label: "1.2.3-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.2.2": {
               label: "1.2.2-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.2.1": {
               label: "1.2.1-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.2.0": {
               label: "1.2.0-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.1.3": {
               label: "1.1.3-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.1.2": {
               label: "1.1.2-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.1.1": {
               label: "1.1.1-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.1.0": {
               label: "1.1.0-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.0.2": {
               label: "1.0.2-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.0.1": {
               label: "1.0.1-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "1.0.0": {
               label: "1.0.0-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "0.8.1": {
               label: "0.8.1-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
             "0.8.0": {
               label: "0.8.0-archived",
-              banner: "none",
+              banner: "unmaintained",
             },
           },
           sidebarPath: "./sidebars.js",
@@ -245,7 +249,7 @@ const config = {
     ({
       docs: {
         sidebar: {
-          hideable: true,
+          hideable: false,
           autoCollapseCategories: true,
         },
       },
@@ -280,9 +284,9 @@ const config = {
         items: [
           {
             type: "docsVersionDropdown",
+            label: "Documentation",
             position: "left",
             dropdownActiveClassDisabled: false,
-            label: "Documentation",
           },
           {
             to: "/blog",

@@ -18,7 +18,6 @@ It includes below resources associating with the Longhorn system:
 - EngineImages
 - PersistentVolumes
 - PersistentVolumeClaims
-- PodSecurityPolicies
 - RecurringJobs
 - Roles
 - RoleBindings
